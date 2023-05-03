@@ -8,16 +8,15 @@
 
 Este portafolio web fue desarrollado utilizando las siguientes tecnologías:
 
--Astro.js
--Tailwind css
--React.js
--React toastify
--React icons
--Typescript
--React hook form
--Flowbite
--Tailwind scrollbar
+- Astro.js
+- Tailwind css
+- React.js
+- React toastify
+- React icons
+- Typescript
+- React hook form
+- Flowbite
+- Tailwind scrollbar
 
-## Link a el portafolio
 
-![ir a el portafolio] (https://www.elvportafolio.website)
+Visita mi portafolio [aquí](https://elvportafolio.website)
