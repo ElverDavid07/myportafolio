@@ -1,0 +1,111 @@
+/** Global */
+
+body {
+ @apply bg-[#f6f6f6]   lg:scrollbar-thumb-rounded-md   lg:scrollbar-track-rounded-sm  lg:scrollbar-thin lg:scrollbar-thumb-indigo-600 lg:scrollbar-track-slate-300 selection:bg-indigo-600 selection:text-white;
+}
+
+.Subtitle {
+ @apply font-kalam text-4xl text-indigo-600;
+}
+
+/** Navbar Component */
+.Content-navbar {
+ @apply top-0 sticky bg-[#f6f6f6] z-50;
+}
+
+.Navbar {
+ @apply lg:flex lg:justify-between lg:items-center py-5 lg:px-8;
+}
+
+.Nav-icons {
+ @apply text-3xl lg:hidden;
+}
+.Nav-content-items {
+ @apply lg:static lg:w-auto lg:py-0 absolute bg-[#f6f6f6] w-full  z-[-1] lg:z-auto duration-300 py-16;
+}
+
+.Nav-list {
+ @apply flex lg:flex-row lg:gap-y-0 lg:py-0 lg:text-base flex-col items-center gap-x-3 gap-y-12 py-5 text-indigo-600 font-nunito  text-xl;
+}
+
+.Link:hover {
+ text-shadow: 0px 0px 10px #4f46e5;
+ transition-duration: 300ms
+}
+
+/** Hero component  */
+.Name {
+ @apply font-kalam text-5xl  text-indigo-600;
+}
+
+.Button {
+ @apply py-2 px-8 bg-gradient-to-r  mt-5 from-emerald-700 to-emerald-600 rounded-lg text-white hover:scale-[1.05] active:scale-[0.8] transition-all font-nunito disabled:bg-opacity-60;
+}
+
+/** Knowledge component */
+.Content-icons {
+ @apply grid lg:grid-cols-3 lg:gap-8  grid-cols-2 items-center justify-items-center gap-y-12;
+}
+
+/** Certificate component  */
+
+.Text {
+ @apply font-nunito text-slate-700 flex  gap-x-1;
+}
+.Content-certificates {
+ @apply pb-5   bg-white border   rounded-lg;
+}
+.Link-certificate {
+ @apply text-emerald-700 font-nunito flex justify-end pt-6 text-lg hover:text-emerald-800 pr-2;
+}
+
+/** Project component  */
+
+.Content-all-project {
+ @apply grid  md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-8 mt-16;
+}
+
+.Content-one-project {
+ @apply rounded-lg shadow-lg shadow-indigo-300 px-4 py-10 relative hover:scale-[1.03] duration-300;
+}
+
+.Url-icons {
+ @apply text-4xl text-slate-800 hover:text-emerald-600 transition-all;
+}
+/** Project component/Tag   */
+
+.Tag-avanzado {
+ @apply absolute top-0 right-0 text-emerald-800 py-1 px-4 capitalize rounded bg-opacity-20 bg-emerald-500 font-nunito;
+}
+
+.Tag-desarrollo {
+ @apply absolute top-0 right-0 text-blue-700 py-1 px-4 capitalize rounded bg-opacity-20 bg-blue-500 font-nunito;
+}
+
+.Tag-intermedio {
+ @apply absolute top-0 right-0 text-orange-700 py-1 px-4 capitalize rounded bg-opacity-20 bg-orange-500 font-nunito;
+}
+
+.Tag-basico {
+ @apply absolute top-0 right-0 text-gray-700 py-1 px-4 capitalize rounded bg-opacity-20 bg-gray-500 font-nunito;
+}
+
+/** Contact component  */
+
+.Form {
+ @apply flex flex-col lg:w-1/3 gap-y-5 mx-auto mb-16 border  py-10 px-4 rounded-xl relative;
+}
+
+.Label {
+ @apply text-indigo-600 font-nunito text-lg capitalize;
+}
+
+.Error-Message {
+ @apply text-red-500 pl-3 flex items-center gap-x-2 font-nunito italic mt-1 absolute focus:ring-0;
+}
+
+/** Footer component  */
+
+.Footer {
+ @apply lg:flex-row lg:gap-y-0 lg:justify-around bg-slate-200 flex flex-col justify-center gap-y-5 items-center  mt-32 font-nunito text-slate-700 h-40;
+}

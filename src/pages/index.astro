@@ -1,0 +1,25 @@
+---
+import Layout from "@layout/Layout.astro";
+import Hero from "@components/Hero.astro";
+import About from "@components/About.astro";
+import Knowledge from "@components/knowledge";
+import Certificates from "@components/Certificates.astro";
+import Project from "@components/Project";
+import Contact from "@components/Contact";
+---
+
+<Layout title="portafolio | elver david peñate">
+ <main class="mx-4 md:mx-16 lg:mx-20">
+  <Hero />
+  <About />
+  <Knowledge client:load />
+  <Certificates />
+  <Project client:load />
+  <Contact client:load />
+
+ </main>
+</Layout>
+<!-- 
+
+
+ -->

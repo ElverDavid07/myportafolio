@@ -1,0 +1,30 @@
+---
+import { Certificates } from "@utils/profile";
+import { RiMapPinLine } from "react-icons/ri/index.js";
+import { TbCertificate } from "react-icons/tb/index.js";
+---
+
+<h2 class="Subtitle mt-36 mb-12">Certificados</h2>
+<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8" id="certificates">
+ {
+  Certificates.map(({ course, name, university, url, urlPdf }) => (
+   <div class="Content-certificates">
+    <img src={url} alt={name} />
+    <div class="px-2 space-y-2 mt-3">
+     <span class="Text items-start">
+      <RiMapPinLine className="text-emerald-600 mt-1 text-lg " />
+      Otorgado por : {university}
+     </span>
+     <span class="Text items-center">
+      <TbCertificate className="text-emerald-600 text-lg" />
+      Nombre : {course}
+     </span>
+    </div>
+
+    <a href={urlPdf} target="_blank" title={name} class="Link-certificate">
+     ver certificado
+    </a>
+   </div>
+  ))
+ }
+</div>
