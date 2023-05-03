@@ -37,10 +37,6 @@ export const knowledge = [
   link: "/icons/next.svg",
  },
  {
-  name: "framer motion",
-  link: "/icons/framer-motion.svg",
- },
- {
   name: "Git",
   link: "/icons/git.svg",
  },
@@ -89,7 +85,7 @@ export const Project = [
  {
   name: "Página web estática desarrollada con Astro.js",
   description:
-   " página web informativa, que incluye una página de inicio, una página de sobre nosotros, una página de productos y una página de contacto. El diseño moderno de la página web se carga rápidamente y demuestra mis habilidades en desarrollo web.",
+   "Este proyecto es una página web informativa desarrollada para una compañía exportadora de frutas. En esta página, los usuarios pueden encontrar información sobre la compañía, sus productos y cómo contactarlos. Es importante señalar que esta página no es oficial de la compañía, sino que fue creada por mí como parte de la puesta en práctica de mis conocimientos y habilidades en el desarrollo web.",
   url: "/project/colfrutas-project.png",
   urlGitHub: "https://github.com/ElverDavid07/static-page",
   urlWeb: "https://www.colfrutas.site",
@@ -116,5 +112,15 @@ export const Project = [
   tag:"En desarrollo",
   typeTag:"Tag-desarrollo"
  },
+ {
+    name: "Portafolio web",
+    description:
+     "Para el desarrollo de mi portafolio, utilicé Astro.js, un framework rápido y flexible que me permitió crear una experiencia de usuario fluida y elegante. Además, utilicé Tailwind CSS, un framework de diseño de interfaz de usuario muy popular que me permitió personalizar y estilizar el sitio web con facilidad y rapidez.En mi repositorio de GitHub, puedes encontrar el código fuente de este portafolio, lo que te permitirá ver cómo se construyó y tal vez incluso aprender algo nuevo.",
+    url: "/portafolio-image.png",
+    urlGitHub: "https://github.com/ElverDavid07/myportafolio",
+    urlWeb: "/",
+    tag:"intermedio",
+    typeTag:"Tag-intermedio"
+   },
 
 ];
