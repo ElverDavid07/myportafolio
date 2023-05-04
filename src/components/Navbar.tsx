@@ -20,10 +20,10 @@ const Navbar = () => {
      </button>
     </div>
 
-    <div className={`Nav-content-items ${open ? "top-16" : "top-[-550px] "}`}>
+    <div className={`Nav-content-items ${open ? "top-16" : "top-[-850px] "}`}>
      <div
       className={`Nav-list  ${
-       open ? "top-20 opacity-100 " : "top-[-450px] lg:opacity-100 opacity-0"
+       open ? "top-20 opacity-100 " : "top-[-850px] lg:opacity-100 opacity-0"
       }`}
      >
       <Link to="home" href="#home" className="Link" onClick={close}>
