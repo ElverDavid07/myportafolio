@@ -77,6 +77,13 @@ export const Certificates = [
   university: "Universidad sergio arboleda",
   course: "Desarrollo de software",
  },
+ {
+   name: "certificate tecnico laboral",
+   url: "/certificates/certificado-tecnico-laboral.png",
+   urlPdf: "/certificates/certificado-tecnico-laboral.pdf",
+   university: "Universidad autonoma de bucaramanga",
+   course: "Tecnico laboral en habilidades en programacion con enfasis en aplicaciones web",
+  },
 ];
 
 //* Project

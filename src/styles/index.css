@@ -50,7 +50,7 @@ body {
 /** Certificate component  */
 
 .Text {
- @apply font-nunito text-slate-700 flex  gap-x-1;
+ @apply font-nunito text-slate-700 flex items-start  gap-x-1;
 }
 .Content-certificates {
  @apply pb-5   bg-white border   rounded-lg;

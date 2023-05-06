@@ -11,13 +11,13 @@ import { TbCertificate } from "react-icons/tb/index.js";
    <div class="Content-certificates">
     <img src={url} alt={name} />
     <div class="px-2 space-y-2 mt-3">
-     <span class="Text items-start">
+     <span class="Text">
       <RiMapPinLine className="text-emerald-600 mt-1 text-lg " />
-      Otorgado por : {university}
+      <span class="flex-1">Otorgado por : {university}</span>
      </span>
-     <span class="Text items-center">
+     <span class="Text">
       <TbCertificate className="text-emerald-600 text-lg" />
-      Nombre : {course}
+      <span class="flex-1">Nombre : {course}</span>
      </span>
     </div>
 
