@@ -59,7 +59,6 @@ body {
  @apply text-emerald-700 font-nunito flex justify-end pt-6 text-lg hover:text-emerald-800 pr-2;
 }
 
-
 /** Project component  */
 
 .Content-all-project {
@@ -71,7 +70,7 @@ body {
 }
 
 .Url-icons {
- @apply text-4xl ;
+ @apply text-4xl;
 }
 
 .Link-response {

@@ -13,7 +13,7 @@ const ProjectComponents = () => {
       <h2 className="text-center font-nunito text-slate-950 text-lg py-2">{name} </h2>
       <p className="text-slate-700 py-2 font-nunito">{description} </p>
       <div className="flex justify-between lg:justify-normal items-center gap-x-2">
-        {/* icono de github  */}
+       {/* icono de github  */}
        <Tooltip content="Ver codigo" className="lg:block hidden">
         <a href={urlGitHub} target="_blank" aria-label="link github" className="Link-response">
          <RiGithubFill className="Url-icons" aria-label="link github" />
@@ -27,11 +27,12 @@ const ProjectComponents = () => {
           className={`Url-icons ${urlWeb === "/" ? "hidden" : ""}`}
           aria-label="link website"
          />
-         <span className={`font-nunito lg:hidden ${urlWeb === "/" ? "hidden" : ""}`}>ir a la pagina</span>
+         <span className={`font-nunito lg:hidden ${urlWeb === "/" ? "hidden" : ""}`}>
+          ir a la pagina
+         </span>
         </a>
        </Tooltip>
       </div>
-    
      </div>
     ))}
    </div>
