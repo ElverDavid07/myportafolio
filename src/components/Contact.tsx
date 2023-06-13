@@ -1,6 +1,6 @@
 import type { Data } from "@interfaces/SubmitData";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { FiAlertCircle } from "react-icons/fi/index.js";
+import { FiAlertCircle } from "react-icons/fi/index";
 import { TextInput, Textarea, Label, Spinner} from "flowbite-react";
 import emailJs from "@emailjs/browser";
 import { useState } from "react";
@@ -31,10 +31,10 @@ const Contact = () => {
  return (
   <>
    <h2 className="Subtitle text-center mt-32 mb-16" id="contact">Contacto</h2>
-   <h3 className="font-nunito text-slate-700 text-lg  mb-16">
+   <p className="font-nunito text-slate-700 text-lg  mb-16 text-center">
     ¡Gracias por visitar mi portafolio! Si deseas ponerte en contacto conmigo, puedes enviarme un
     correo electrónico, atravez de este formulario.
-   </h3>
+   </p>
 
    {/* Form */}
    <form className="Form" onSubmit={handleSubmit(submitData)} id="formId">

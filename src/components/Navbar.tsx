@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { RiMenuFill, RiCloseFill } from "react-icons/ri/index.js";
+import { RiMenuFill, RiCloseFill } from "react-icons/ri/index";
 const Navbar = () => {
  const [open, setOpen] = useState(false);
  const close = () => setOpen(!open);

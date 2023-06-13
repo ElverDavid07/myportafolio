@@ -52,6 +52,18 @@ export const knowledge = [
   name: "Typescript",
   link: "/icons/typescript.svg",
  },
+ {
+  name: "Astro.js",
+  link: "/icons/astro.svg",
+ },
+ {
+  name: "Mysql",
+  link: "/icons/mysql.svg",
+ },
+ {
+  name: "Prisma",
+  link: "/icons/prisma.svg",
+ },
 ];
 
 //* Certificados
@@ -78,56 +90,55 @@ export const Certificates = [
   course: "Desarrollo de software",
  },
  {
-   name: "certificate tecnico laboral",
-   url: "/certificates/certificado-tecnico-laboral.png",
-   urlPdf: "/certificates/certificado-tecnico-laboral.pdf",
-   university: "Universidad autonoma de bucaramanga",
-   course: "Tecnico laboral en habilidades en programacion con enfasis en aplicaciones web",
-  },
+  name: "certificate tecnico laboral",
+  url: "/certificates/certificado-tecnico-laboral.png",
+  urlPdf: "/certificates/certificado-tecnico-laboral.pdf",
+  university: "Universidad autonoma de bucaramanga",
+  course: "Tecnico laboral en habilidades en programacion con enfasis en aplicaciones web",
+ },
 ];
 
 //* Project
 
 export const Project = [
  {
-  name: "Página web estática desarrollada con Astro.js",
+  name: "Página web informativa",
   description:
    "Este proyecto es una página web informativa desarrollada para una compañía exportadora de frutas. En esta página, los usuarios pueden encontrar información sobre la compañía, sus productos y cómo contactarlos. Es importante señalar que esta página no es oficial de la compañía, sino que fue creada por mí como parte de la puesta en práctica de mis conocimientos y habilidades en el desarrollo web.",
   url: "/project/colfrutas-project.png",
   urlGitHub: "https://github.com/ElverDavid07/static-page",
   urlWeb: "https://www.colfrutas.site",
-  tag:"intermedio",
-  typeTag:"Tag-intermedio"
+  tag: "intermedio",
+  typeTag: "Tag-intermedio",
  },
  {
-  name: "Api rest con Node.js",
+  name: "Sistema de autenticación",
   description:
-   " He desarrollado una API REST utilizando TypeScript, Node.js, Express y MongoDB, que permite el registro e inicio de sesión de usuarios con funciones de validación de datos, encriptación de contraseñas y rutas protegidas por token. La aplicación también cuenta con roles de usuario, rutas de administradores, paginación, sistema de caché y relaciones entre documentos, todo ello diseñado para mejorar el rendimiento y la seguridad de la aplicación. ",
+   "Esta API de autenticación, desarrollada con Express, TypeScript y Prisma, ofrece diversas funcionalidades como registro de usuarios, inicio de sesión, gestión de perfiles, cambio de contraseñas y más. La seguridad es una prioridad, por lo que las contraseñas se encriptan para mayor protección. Además, se implementaron características como paginación y validación de datos para garantizar un funcionamiento seguro y eficiente.",
   url: "/project/apiNode.png",
-  urlGitHub: "https://github.com/ElverDavid07/user-management-api",
+  urlGitHub: "https://github.com/ElverDavid07/Auth-api",
   urlWeb: "/",
-  tag:"avanzado",
-  typeTag:"Tag-avanzado"
+  tag: "avanzado",
+  typeTag: "Tag-avanzado",
  },
  {
-  name: "Dasboard desarrollado con next.js",
+  name: "Dasboard",
   description:
-   "Estoy desarrollando un proyecto web con Next.js que incluye funciones de registro e inicio de sesión de usuarios. Una vez que los usuarios inicien sesión, tendrán acceso a un dashboard personalizado donde podrán realizar diferentes funciones.",
+   "Estoy desarrollando un proyecto de dashboard utilizando Next.js. Este dashboard se está integrando con la API de autenticación que he creado previamente. A través del dashboard, los usuarios podrán acceder y gestionar su perfil, cambiar contraseñas y actualizar su información personal de manera intuitiva y segura. Además, se agregarán más características y funcionalidades en futuras actualizaciones.",
   url: "/project/dasboard.png",
   urlGitHub: "https://github.com/ElverDavid07/frontUserManagement",
   urlWeb: "/",
-  tag:"En desarrollo",
-  typeTag:"Tag-desarrollo"
+  tag: "En desarrollo",
+  typeTag: "Tag-desarrollo",
  },
  {
-    name: "Portafolio web",
-    description:
-     "Para el desarrollo de mi portafolio, utilicé Astro.js, un framework rápido y flexible que me permitió crear una experiencia de usuario fluida y elegante. Además, utilicé Tailwind CSS, un framework de diseño de interfaz de usuario muy popular que me permitió personalizar y estilizar el sitio web con facilidad y rapidez.En mi repositorio de GitHub, puedes encontrar el código fuente de este portafolio, lo que te permitirá ver cómo se construyó y tal vez incluso aprender algo nuevo.",
-    url: "/portafolio-image.png",
-    urlGitHub: "https://github.com/ElverDavid07/myportafolio",
-    urlWeb: "/",
-    tag:"intermedio",
-    typeTag:"Tag-intermedio"
-   },
-
+  name: "Portafolio web",
+  description:
+   "Para el desarrollo de mi portafolio, utilicé Astro.js, un framework rápido y flexible que me permitió crear una experiencia de usuario fluida y elegante. Además, utilicé Tailwind CSS, un framework de diseño de interfaz de usuario muy popular que me permitió personalizar y estilizar el sitio web con facilidad y rapidez.En mi repositorio de GitHub, puedes encontrar el código fuente de este portafolio, lo que te permitirá ver cómo se construyó y tal vez incluso aprender algo nuevo.",
+  url: "/portafolio-image.png",
+  urlGitHub: "https://github.com/ElverDavid07/myportafolio",
+  urlWeb: "/",
+  tag: "intermedio",
+  typeTag: "Tag-intermedio",
+ },
 ];

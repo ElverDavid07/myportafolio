@@ -18,7 +18,7 @@ body {
 }
 
 .Nav-icons {
- @apply text-3xl lg:hidden;
+ @apply text-3xl lg:hidden hover:text-indigo-600;
 }
 .Nav-content-items {
  @apply lg:static lg:w-auto lg:py-0 absolute bg-[#f6f6f6] w-full  z-[-1] lg:z-auto duration-300 py-16 pb-96 lg:pb-0;

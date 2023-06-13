@@ -1,4 +1,4 @@
-import { RiGithubFill, RiGlobalLine } from "react-icons/ri/index.js";
+import { RiGithubFill, RiGlobalLine } from "react-icons/ri/index"
 import { Project } from "@utils/profile";
 import { Tooltip } from "flowbite-react";
 const ProjectComponents = () => {
