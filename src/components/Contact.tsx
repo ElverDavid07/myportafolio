@@ -1,11 +1,10 @@
 import type { Data } from "@interfaces/SubmitData";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { FiAlertCircle } from "react-icons/fi/index";
-import { TextInput, Textarea, Label, Spinner} from "flowbite-react";
+import { TextInput, Textarea, Label, Spinner } from "flowbite-react";
 import emailJs from "@emailjs/browser";
 import { useState } from "react";
-import { toast,ToastContainer, Zoom } from "react-toastify";
-
+import { toast, ToastContainer, Zoom } from "react-toastify";
 
 const Contact = () => {
  const [loaderBtn, setLoaderBtn] = useState(true);
@@ -30,7 +29,9 @@ const Contact = () => {
 
  return (
   <>
-   <h2 className="Subtitle text-center mt-32 mb-16" id="contact">Contacto</h2>
+   <h2 className="Subtitle text-center mt-32 mb-16" id="contact">
+    Contacto
+   </h2>
    <p className="font-nunito text-slate-700 text-lg  mb-16 text-center">
     ¡Gracias por visitar mi portafolio! Si deseas ponerte en contacto conmigo, puedes enviarme un
     correo electrónico, atravez de este formulario.
@@ -98,12 +99,12 @@ const Contact = () => {
     </button>
    </form>
    <ToastContainer
-   autoClose={1000}
-   closeOnClick={false}
-   closeButton={false}
-   pauseOnHover={false}
-   transition={Zoom}
-  />
+    autoClose={1000}
+    closeOnClick={false}
+    closeButton={false}
+    pauseOnHover={false}
+    transition={Zoom}
+   />
   </>
  );
 };

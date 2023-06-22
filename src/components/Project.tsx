@@ -1,4 +1,4 @@
-import { RiGithubFill, RiGlobalLine } from "react-icons/ri/index"
+import { RiGithubFill, RiGlobalLine } from "react-icons/ri/index";
 import { Project } from "@utils/profile";
 import { Tooltip } from "flowbite-react";
 const ProjectComponents = () => {
@@ -9,7 +9,7 @@ const ProjectComponents = () => {
     {Project.map(({ description, name, url, urlGitHub, urlWeb, tag, typeTag }, i) => (
      <div key={i} className="Content-one-project">
       <div className={typeTag}>{tag} </div>
-      <img src={url} alt={name} />
+      <img src={url} alt={name} width={"381"} height={"189"} />
       <h2 className="text-center font-nunito text-slate-950 text-lg py-2">{name} </h2>
       <p className="text-slate-700 py-2 font-nunito">{description} </p>
       <div className="flex justify-between lg:justify-normal items-center gap-x-2">

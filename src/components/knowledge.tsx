@@ -5,9 +5,7 @@ const knowledgeComponent = () => {
  return (
   <>
    <div className="mt-36" id="knowledge">
-    <h2 className="Subtitle text-center  pb-16" >
-     Conocimientos
-    </h2>
+    <h2 className="Subtitle text-center  pb-16">Conocimientos</h2>
     <div className="Content-icons">
      {knowledge.map(({ link, name }, i) => (
       <div key={i}>

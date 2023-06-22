@@ -7,9 +7,9 @@ const CertificatesComponent = () => {
   <>
    <h2 className="Subtitle mt-36 mb-12">Certificados</h2>
    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8" id="certificates">
-    {Certificates.map(({ course, name, university, url, urlPdf },i) => (
+    {Certificates.map(({ course, name, university, url, urlPdf }, i) => (
      <div className="Content-certificates" key={i}>
-      <img src={url} alt={name} />
+      <img src={url} alt={name} width={"411"} height={"315"} />
       <div className="px-2 space-y-2 mt-3">
        <span className="Text">
         <RiMapPinLine className="text-emerald-600 mt-1 text-lg " />
