@@ -141,4 +141,14 @@ export const Project = [
   tag: "intermedio",
   typeTag: "Tag-intermedio",
  },
+ {
+  name: "Landing page",
+  description:
+   "Diseño de Landig page, Con un enfoque en la estética y la experiencia del usuario.El diseño es optimizado y responsive, asegurando una visualización perfecta en diferentes dispositivos. ",
+  url: "/project/image_landing_page.png",
+  urlGitHub: "https://github.com/ElverDavid07/Landing_Page",
+  urlWeb: "https://landing-page-psi-flax.vercel.app",
+  tag: "intermedio",
+  typeTag: "Tag-intermedio",
+ },
 ];
