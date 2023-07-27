@@ -15,14 +15,14 @@ export const Project = [
 		urlGitHub: "https://github.com/ElverDavid07/Auth-api",
 		urlWeb: "/",
 	},
-	{
+	/* 	{
 		name: "Dasboard",
 		description:
 			"Estoy desarrollando un proyecto de dashboard utilizando Next.js. Este dashboard se está integrando con la API de autenticación que he creado previamente. A través del dashboard, los usuarios podrán acceder y gestionar su perfil, cambiar contraseñas y actualizar su información personal de manera intuitiva y segura. Además, se agregarán más características y funcionalidades en futuras actualizaciones.",
 		url: "/project/dasboard.png",
 		urlGitHub: "https://github.com/ElverDavid07/frontUserManagement",
 		urlWeb: "/",
-	},
+	}, */
 	{
 		name: "Portafolio web",
 		description:

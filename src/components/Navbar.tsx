@@ -1,23 +1,47 @@
-import { useState } from "react";
-import { RiCloseFill, RiMenuFill } from "react-icons/ri/index";
+import { useEffect, useState } from "react";
+import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs/index';
+import { FiMenu, FiX } from "react-icons/fi/index";
 import { Link } from "react-scroll";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(!open);
+
+  const [toggleDarkMode, setToggleDarkMode] = useState(
+    localStorage.theme === 'dark' ||
+    (!('theme' in localStorage) &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+  );
+
+  useEffect(() => {
+    if (toggleDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.theme = 'light';
+    }
+  }, [toggleDarkMode]);
+
+  const changeDarkMode = () => {
+    setToggleDarkMode((prevState) => !prevState);
+  };
   return (
     <header className="Content-navbar">
       <nav className="Navbar">
-        <div className="flex justify-between items-center mx-2">
+        <div className="flex justify-between items-center mx-2 lg:-order-1">
           <Link to="home" href="#home">
             <img src="./logo.svg" alt="logo" width={80} height={80} />
           </Link>
-          <button onClick={() => setOpen(!open)} aria-label="button menu" type="submit">
+          <button onClick={() => setOpen(!open)} aria-label="button menu" type="submit" className="order-1 lg:order-none">
             {open ? (
-              <RiCloseFill className="Nav-icons" title="close navbar" />
+              <FiX className="Nav-icons" title="close navbar" />
             ) : (
-              <RiMenuFill className="Nav-icons" title="open navbar" />
+              <FiMenu className="Nav-icons" title="open navbar" />
             )}
           </button>
+        </div>
+        <div onClick={changeDarkMode} onKeyUp={changeDarkMode} className="ml-44 lg:ml-0 lg:order-2 absolute lg:static top-6 lg:top-0 lg:right-0 right-14">
+          {toggleDarkMode ? (<BsFillSunFill className="dark:text-yellow-300 text-2xl cursor-pointer" />) : (<BsFillMoonStarsFill className="text-sky-700 text-2xl cursor-pointer" />)}
         </div>
 
         <div className={`Nav-content-items ${open ? "top-16" : "top-[-850px] "}`}>
@@ -45,6 +69,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+
       </nav>
     </header>
   );

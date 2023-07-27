@@ -11,10 +11,10 @@ const ProjectComponents = () => {
             <div key={name} className="Content-one-project">
 
               <img src={url} alt={name} width={"381"} height={"189"} />
-              <h2 className="text-center font-nunito text-slate-950 text-lg py-2">
-                {name}{" "}
+              <h2 className="text-center font-nunito text-slate-950 dark:text-white text-lg py-2">
+                {name}
               </h2>
-              <p className="text-slate-700 py-2 font-nunito">{description} </p>
+              <p className="text-slate-700 dark:text-slate-200 py-2 font-nunito">{description} </p>
               <div className="flex justify-between lg:justify-normal items-center gap-x-2">
                 {/* icono de github  */}
                 <Tooltip content="Ver codigo" className="lg:block hidden">

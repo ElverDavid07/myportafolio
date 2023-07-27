@@ -12,14 +12,14 @@ const CertificatesComponent = () => {
       >
         {Certificates.map(({ course, name, university, url, urlPdf }) => (
           <div className="Content-certificates" key={name}>
-            <img src={url} alt={name} width={"411"} height={"315"} />
+            <img src={url} alt={name} width={"411"} height={"315"} className="dark:rounded-sm" />
             <div className="px-2 space-y-2 mt-3">
               <span className="Text">
                 <RiMapPinLine className="text-emerald-600 mt-1 text-lg " />
                 <span className="flex-1">Otorgado por : {university}</span>
               </span>
               <span className="Text">
-                <TbCertificate className="text-emerald-600 text-lg" />
+                <TbCertificate className="text-emerald-600 dark:text-emerald-500 text-lg" />
                 <span className="flex-1">Nombre : {course}</span>
               </span>
             </div>
