@@ -21,7 +21,7 @@ body {
  @apply text-3xl lg:hidden hover:text-indigo-600 dark:text-white;
 }
 .Nav-content-items {
- @apply lg:static lg:w-auto lg:py-0 absolute bg-[#f6f6f6] dark:bg-slate-950 w-full  z-[-1] lg:z-auto  py-16  lg:ml-[550px]
+ @apply lg:static lg:w-auto lg:py-0 absolute bg-[#f6f6f6] dark:bg-slate-950 w-full  z-[-1] lg:z-auto  py-16 pb-96  lg:ml-[550px]
 }
 
 .Nav-list {
