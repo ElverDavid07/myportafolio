@@ -21,5 +21,6 @@ Este portafolio web fue desarrollado utilizando las siguientes tecnologías:
 - React hook form
 - Flowbite
 - Tailwind scrollbar
+- Rome tools
 
 Visita mi portafolio [aquí](https://elvportafolio.website)
