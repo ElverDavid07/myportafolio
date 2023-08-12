@@ -49,22 +49,22 @@ const Navbar = () => {
             className={`Nav-list  ${open ? "top-20 opacity-100 " : "top-[-850px] lg:opacity-100 opacity-0"
               }`}
           >
-            <Link to="home" href="#home" className="Link dark:Link-Dark" onClick={close}>
+            <Link to="home" href="#home" className="Link dark:Link-Dark text-indigo-600 dark:text-white dark:hover:text-indigo-600 transition-all" onClick={close}>
               inicio
             </Link>
-            <Link to="about" href="#about" offset={-140} className="Link dark:Link-Dark" onClick={close}>
+            <Link to="about" href="#about" offset={-140} className="Link dark:Link-Dark text-indigo-600 dark:text-white dark:hover:text-indigo-600 transition-all" onClick={close}>
               sobre mi
             </Link>
-            <Link to="knowledge" href="#knowledge" offset={-90} className="Link dark:Link-Dark" onClick={close}>
+            <Link to="knowledge" href="#knowledge" offset={-90} className="Link dark:Link-Dark text-indigo-600 dark:text-white dark:hover:text-indigo-600 transition-all" onClick={close}>
               conocimientos
             </Link>
-            <Link to="certificates" href="certificates" offset={-200} className="Link dark:Link-Dark" onClick={close}>
+            <Link to="certificates" href="certificates" offset={-200} className="Link dark:Link-Dark text-indigo-600 dark:text-white dark:hover:text-indigo-600 transition-all" onClick={close}>
               certificados
             </Link>
-            <Link to="projects" href="projects" offset={-190} className="Link dark:Link-Dark" onClick={close}>
+            <Link to="projects" href="projects" offset={-190} className="Link dark:Link-Dark text-indigo-600 dark:text-white dark:hover:text-indigo-600 transition-all" onClick={close}>
               proyectos
             </Link>
-            <Link to="contact" href="contact" offset={-130} className="Link dark:Link-Dark" onClick={close}>
+            <Link to="contact" href="contact" offset={-130} className="Link dark:Link-Dark text-indigo-600 dark:text-white dark:hover:text-indigo-600 transition-all" onClick={close}>
               contacto
             </Link>
           </div>

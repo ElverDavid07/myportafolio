@@ -10,7 +10,7 @@ const ProjectComponents = () => {
           ({ description, name, url, urlGitHub, urlWeb }) => (
             <div key={name} className="Content-one-project">
 
-              <img src={url} alt={name} width={"381"} height={"189"} />
+              <img src={url} alt={name} width={"381"} height={"189"} className="mx-auto" />
               <h2 className="text-center font-nunito text-slate-950 dark:text-white text-lg py-2">
                 {name}
               </h2>
