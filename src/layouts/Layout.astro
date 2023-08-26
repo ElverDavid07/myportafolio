@@ -3,11 +3,6 @@ import Footer from "@components/Footer.astro";
 import Navbar from "@components/Navbar";
 import "@styles/index.css";
 import "react-toastify/dist/ReactToastify.css";
-export interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -38,13 +33,13 @@ const { title } = Astro.props;
     />
     <meta
       name="description"
-      content="portafolio web de elver david peñate , donde muestro mis abilidades,conocimientos y proyectos que he realizado."
+      content="portafolio web de elver david peñate , donde muestro mis abilidades,conocimientos,certificados y proyectos que he realizado."
     />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="canonical" href="https://www.elvportafolio.website" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>portafolio | elver david peñate</title>
   </head>
   <body id="home">
     <Navbar client:only />

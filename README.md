@@ -1,7 +1,7 @@
 <h1 style="color:#4f46e5; font-weight: 700;text-align: center;">Bienvenidos a mi Portafolio Web</h1>
 <br/>
 
-![portafolio web](./public/portafolio-image.png)
+![portafolio web](https://res.cloudinary.com/dnbdpnvz1/image/upload/v1693086730/images_project/dppoo0goindsfdwy4b9d.png)
 
 <br/>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -19,7 +19,7 @@ Este portafolio web fue desarrollado utilizando las siguientes tecnologías:
 - React icons
 - Typescript
 - React hook form
-- Flowbite
+- NextUi
 - Tailwind scrollbar
 - Rome tools
 
