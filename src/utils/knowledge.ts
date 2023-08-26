@@ -12,6 +12,10 @@ export const knowledge = [
 		link: "/icons/js.svg",
 	},
 	{
+		name: "Typescript",
+		link: "/icons/typescript.svg",
+	},
+	{
 		name: "React.js",
 		link: "/icons/react.svg",
 	},
@@ -36,20 +40,12 @@ export const knowledge = [
 		link: "/icons/next.svg",
 	},
 	{
+		name: "Nest.js",
+		link: "/icons/nestjs.svg",
+	},
+	{
 		name: "Git",
 		link: "/icons/git.svg",
-	},
-	{
-		name: "vite.js",
-		link: "/icons/vitejs.svg",
-	},
-	{
-		name: "postman",
-		link: "/icons/postman.svg",
-	},
-	{
-		name: "Typescript",
-		link: "/icons/typescript.svg",
 	},
 	{
 		name: "Astro.js",

@@ -8,17 +8,13 @@ import Knowledge from "@components/knowledge";
 import Layout from "@layout/Layout.astro";
 ---
 
-<Layout title="portafolio | elver david peñate">
- <main class="mx-4 sm:mx-4 md:mx-16 lg:mx-20 xl:mx-20 2xl:mx-32">
-  <Hero client:load />
-  <About />
-  <Knowledge client:load />
-  <Certificates />
-  <Project client:load />
-  <Contact client:load />
- </main>
+<Layout>
+  <main class="mx-4 sm:mx-4 md:mx-16 lg:mx-20 xl:mx-20 2xl:mx-32">
+    <Hero client:load />
+    <About />
+    <Knowledge client:load />
+    <Certificates />
+    <Project client:load />
+    <Contact client:load />
+  </main>
 </Layout>
-<!-- 
-
-
- -->

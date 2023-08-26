@@ -2,51 +2,48 @@
 import Footer from "@components/Footer.astro";
 import Navbar from "@components/Navbar";
 import "@styles/index.css";
-import "react-loading-skeleton/dist/skeleton.css";
 import "react-toastify/dist/ReactToastify.css";
-export interface Props {
- title: string;
-}
-
-const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
- <head>
-  <!-- FONT -->
+  <head>
+    <!-- FONT -->
 
-  <!-- Preconnect server -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preconnect server -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- nunito -->
-  <link
-   href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
-   rel="stylesheet"
-  />
-  <!-- kalam -->
-  <link
-   href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap"
-   rel="stylesheet"
-  />
-  <!-- Global Metadata -->
-  <meta charset="UTF-8" />
-  <!-- meta google verify -->
-  <meta name="google-site-verification" content="FiMsI4mEgqEzXFi0NLz0K05f_7KMV4PszNvAt1z94SA" />
-  <meta
-   name="description"
-   content="portafolio web de elver david peñate , donde muestro mis abilidades,conocimientos y proyectos que he realizado."
-  />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-  <link rel="canonical" href="https://www.elvportafolio.website" />
-  <meta name="generator" content={Astro.generator} />
-  <title>{title}</title>
- </head>
- <body id="home">
-  <Navbar client:only />
-  <slot />
-  <Footer />
- </body>
+    <!-- nunito -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- kalam -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Global Metadata -->
+    <meta charset="UTF-8" />
+    <!-- meta google verify -->
+    <meta
+      name="google-site-verification"
+      content="FiMsI4mEgqEzXFi0NLz0K05f_7KMV4PszNvAt1z94SA"
+    />
+    <meta
+      name="description"
+      content="portafolio web de elver david peñate , donde muestro mis abilidades,conocimientos,certificados y proyectos que he realizado."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="canonical" href="https://www.elvportafolio.website" />
+    <meta name="generator" content={Astro.generator} />
+    <title>portafolio | elver david peñate</title>
+  </head>
+  <body id="home">
+    <Navbar client:only />
+    <slot />
+    <Footer />
+  </body>
 </html>

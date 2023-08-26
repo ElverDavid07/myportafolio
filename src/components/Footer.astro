@@ -1,22 +1,49 @@
 ---
-import { RiGithubFill, RiLinkedinBoxFill, RiMapPinLine } from "react-icons/ri/index";
+import {
+  RiFacebookCircleFill,
+  RiGithubFill,
+  RiLinkedinBoxFill,
+  RiMapPinLine,
+} from "react-icons/ri/index";
 ---
 
 <footer class="Footer">
- <span class="flex items-center gap-x-2">
-  <RiMapPinLine className="text-lg" />
-  Colombia / Turbo-Antioquia
- </span>
- <div>
-  <h3>Redes sociales</h3>
-  <div class="flex items-center gap-x-2 justify-center">
-   <a href="https://www.linkedin.com/in/elver-peñate" target="_blank" title="Linkedin">
-    <RiLinkedinBoxFill className="text-3xl hover:text-blue-600 duration-300" />
-   </a>
-   <a href="https://github.com/ElverDavid07" target="_blank" title="Github">
-    <RiGithubFill className="text-3xl hover:text-slate-900 duration-300" />
-   </a>
+  <span class="flex items-center gap-x-2">
+    <RiMapPinLine className="text-lg" />
+    Colombia / Turbo-Antioquia
+  </span>
+  <div>
+    <h3>Redes sociales</h3>
+    <div class="flex items-center gap-x-2 justify-center">
+      <a
+        href="https://www.linkedin.com/in/elver-peñate"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Linkedin"
+      >
+        <RiLinkedinBoxFill
+          className="text-3xl hover:text-primary duration-300"
+        />
+      </a>
+      <a
+        href="https://github.com/ElverDavid07"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Github"
+      >
+        <RiGithubFill className="text-3xl hover:text-primary duration-300" />
+      </a>
+      <a
+        href="https://www.facebook.com/elverdavid.penatepacheco.3"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="facebook"
+      >
+        <RiFacebookCircleFill
+          className="text-3xl hover:text-primary duration-300"
+        />
+      </a>
+    </div>
   </div>
- </div>
- <span>V1.1.3</span>
+  <span>V1.1.5</span>
 </footer>
