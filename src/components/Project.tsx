@@ -1,4 +1,4 @@
-import { Tooltip } from "@nextui-org/react";
+import { Link, Tooltip } from "@nextui-org/react";
 import { Project } from "@utils/projects";
 import { RiGithubFill, RiGlobalLine } from "react-icons/ri/index";
 const ProjectComponents = () => {
@@ -31,7 +31,7 @@ const ProjectComponents = () => {
 								}}
 								showArrow={true}
 							>
-								<a
+								<Link
 									href={urlGitHub}
 									target="_blank"
 									aria-label="link github"
@@ -40,7 +40,7 @@ const ProjectComponents = () => {
 								>
 									<RiGithubFill size={30} aria-label="link github" />
 									<span className="lg:hidden font-nunito">ver codigo</span>
-								</a>
+								</Link>
 							</Tooltip>
 							{/* icono de ir a la web */}
 							<Tooltip
@@ -51,7 +51,7 @@ const ProjectComponents = () => {
 								}}
 								showArrow={true}
 							>
-								<a
+								<Link
 									href={urlWeb}
 									target="_blank"
 									aria-label="link website"
@@ -70,7 +70,7 @@ const ProjectComponents = () => {
 									>
 										ir a la pagina
 									</span>
-								</a>
+								</Link>
 							</Tooltip>
 						</div>
 					</div>
