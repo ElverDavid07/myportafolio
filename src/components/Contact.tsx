@@ -66,7 +66,7 @@ const Contact = () => {
 								? "El nombre debe tener al menos 3 caracteres!"
 								: errors.nombre.type === "maxLength"
 								? "El nombre debe tener máximo 50 caracteres!"
-								: undefined // Esto asegura que si hay un error desconocido, no se muestre nada
+								: undefined
 							: undefined
 					}
 				/>
@@ -112,12 +112,7 @@ const Contact = () => {
 							: undefined
 					}
 				/>
-				{/* {errors.mensaje && (
-					<small className="Error-Message top-[427px] ">
-						<FiAlertCircle className="text-base" />
-						{errors.mensaje.type === "required" && "Este campo es requerido!"}
-					</small>
-				)} */}
+
 				<Button
 					radius="full"
 					variant="ghost"
