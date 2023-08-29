@@ -11,7 +11,7 @@ export const Project = [
 		name: "Auth Api",
 		description:
 			"Sistema de autenticación, desarrollado con Express, TypeScript y Prisma, ofrece diversas funcionalidades como registro de usuarios, inicio de sesión, gestión de perfiles, cambio de contraseñas y más. La seguridad es una prioridad, por lo que las contraseñas se encriptan para mayor protección. Además, se implementaron características como paginación y validación de datos para garantizar un funcionamiento seguro y eficiente.",
-		url: "https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/oeajxjnmldcirk139jus",
+		url: "https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/lgrzegvkyldv9lfkbwnn",
 		urlGitHub: "https://github.com/ElverDavid07/Auth-api",
 		urlWeb: "/",
 	},
@@ -24,9 +24,17 @@ export const Project = [
 		urlWeb: "/",
 	},
 	{
+		name: "Pagina de recetas",
+		description:
+			"Este proyecto está en desarrollo y está siendo  desarrollado haciendo uso de Next.js,Typescript y Tailwind css, implementando el sistema de gestión de recetas que previamente desarrollé para que puedas explorar y buscar recetas de todas partes de el mundo.",
+		url: "https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/hkzpcjfctshcy05flmer",
+		urlGitHub: "/",
+		urlWeb: "/",
+	},
+	{
 		name: "Página web informativa",
 		description:
-			"Este proyecto es una página web informativa desarrollada para una compañía exportadora de frutas. En esta página, los usuarios pueden encontrar información sobre la compañía, sus productos y cómo contactarlos. Es importante señalar que esta página no es oficial de la compañía, sino que fue creada por mí como parte de la puesta en práctica de mis conocimientos y habilidades en el desarrollo web.",
+			"Este proyecto es una página web informativa sobre una compañía exportadora de frutas. En esta página, los usuarios pueden encontrar información sobre la compañía, sus productos y cómo contactarlos. Es importante señalar que esta página no es oficial de la compañía, sino que fue creada por mí como parte de la puesta en práctica de mis conocimientos y habilidades en el desarrollo web.",
 		url: "https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/mockup/rdxa1qnqvrfordezhoaj",
 		urlGitHub: "https://github.com/ElverDavid07/static-page",
 		urlWeb: "https://www.colfrutas.site",

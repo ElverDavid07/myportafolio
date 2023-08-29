@@ -38,7 +38,11 @@ const ProjectComponents = () => {
 									className="Link-response"
 									rel="noreferrer"
 								>
-									<RiGithubFill size={30} aria-label="link github" />
+									<RiGithubFill
+										size={30}
+										aria-label="link github"
+										className={urlGitHub === "/" ? "hidden" : ""}
+									/>
 									<span className="lg:hidden font-nunito">ver codigo</span>
 								</Link>
 							</Tooltip>
