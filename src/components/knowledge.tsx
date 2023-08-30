@@ -1,14 +1,13 @@
 import { Tooltip } from "@nextui-org/react";
 import { knowledge } from "@utils/knowledge";
-
 const knowledgeComponent = () => {
 	return (
 		<>
 			<div className="mt-36" id="knowledge">
 				<h2 className="Subtitle text-center  pb-16">Conocimientos</h2>
 				<div className="Content-icons">
-					{knowledge.map(({ link, name }) => (
-						<div key={name}>
+					{knowledge.map(({ link, name }, i) => (
+						<div key={i + name}>
 							<Tooltip
 								content={name}
 								classNames={{
