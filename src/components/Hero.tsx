@@ -1,5 +1,5 @@
+import urlImage from "@assets/icon-hero.svg";
 import { Button } from "@nextui-org/react";
-
 const Hero = () => {
 	const openCurriculum = () =>
 		window.open("./archives/CurriculumElverDavid.pdf", "_blank");
@@ -22,7 +22,7 @@ const Hero = () => {
 				</Button>
 			</div>
 			<img
-				src="icons/icon-hero.svg"
+				src={urlImage.src}
 				alt="icon hero"
 				className="mt-20 lg:mt-0 w-full"
 				width="603"

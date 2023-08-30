@@ -2,7 +2,8 @@ import emailJs from "@emailjs/browser";
 import type { Data } from "@interfaces/SubmitData";
 import { Button, Input, Spinner, Textarea } from "@nextui-org/react";
 import { useState } from "react";
-import { SubmitHandler, useForm } from "react-hook-form";
+import type { SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { ToastContainer, Zoom, toast } from "react-toastify";
 
 const Contact = () => {
