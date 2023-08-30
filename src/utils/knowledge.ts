@@ -1,62 +1,62 @@
 export const knowledge = [
 	{
 		name: "Html5",
-		link: "./src/assets/html.svg",
+		link: "icons/html.svg",
 	},
 	{
 		name: "Css3",
-		link: "./src/assets/css.svg",
+		link: "icons/css.svg",
 	},
 	{
 		name: "Javascript",
-		link: "./src/assets/js.svg",
+		link: "icons/js.svg",
 	},
 	{
 		name: "Typescript",
-		link: "./src/assets/typescript.svg",
+		link: "icons/typescript.svg",
 	},
 	{
 		name: "React.js",
-		link: "./src/assets/react.svg",
+		link: "icons/react.svg",
 	},
 	{
 		name: "Tailwind css",
-		link: "./src/assets/tailwind.svg",
+		link: "icons/tailwind.svg",
 	},
 	{
 		name: "Node.js",
-		link: "./src/assets/node.svg",
+		link: "icons/node.svg",
 	},
 	{
 		name: "Express.js",
-		link: "./src/assets/express.svg",
+		link: "icons/express.svg",
 	},
 	{
 		name: "Mongodb",
-		link: "./src/assets/mongodb.svg",
+		link: "icons/mongodb.svg",
 	},
 	{
 		name: "Next.js",
-		link: "./src/assets/next.svg",
+		link: "icons/next.svg",
 	},
 	{
 		name: "Nest.js",
-		link: "./src/assets/nestjs.svg",
+		link: "icons/nestjs.svg",
 	},
 	{
 		name: "Git",
-		link: "./src/assets/git.svg",
+		link: "icons/git.svg",
 	},
 	{
 		name: "Astro.js",
-		link: "./src/assets/astro.svg",
+		link: "icons/astro.svg",
 	},
 	{
 		name: "Mysql",
-		link: "./src/assets/mysql.svg",
+		link: "icons/mysql.svg",
 	},
 	{
 		name: "Prisma",
-		link: "./src/assets/prisma.svg",
+		link: "icons/prisma.svg",
 	},
 ];
