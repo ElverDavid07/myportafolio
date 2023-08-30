@@ -43,7 +43,6 @@ const ProjectComponents = () => {
 										aria-label="link github"
 										className={urlGitHub === "/" ? "hidden" : ""}
 									/>
-
 								</Link>
 							</Tooltip>
 							{/* icono de ir a la web */}

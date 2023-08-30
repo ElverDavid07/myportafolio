@@ -1,3 +1,15 @@
+---
+import urlImage from "@assets/icon-abaut.svg";
+import { Image, getImage } from "astro:assets";
+const optimizeImage = await getImage({
+  src: urlImage,
+  format: "svg",
+  quality: "max",
+  height: 463,
+  width: 603,
+});
+---
+
 <div class="grid lg:grid-cols-2 items-center">
   <div class="mt-32 space-y-3" id="about">
     <h2 class="Subtitle">Sobre mi</h2>
@@ -12,11 +24,13 @@
       trabajar en proyectos interesantes.
     </p>
   </div>
-  <img
-    src="icons/icon-abaut.svg"
+  <Image
+    src={optimizeImage.src}
     alt="icon section abaut me"
+    decoding="async"
+    loading="lazy"
     class="lg:mt-32 mt-10 w-full"
-    width="603"
-    height="463"
+    width={optimizeImage.options.width}
+    height={optimizeImage.options.height}
   />
 </div>
