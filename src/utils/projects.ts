@@ -26,7 +26,7 @@ export const Project = [
 	{
 		name: "Pagina de recetas",
 		description:
-			"Este proyecto está en desarrollo y está siendo  desarrollado haciendo uso de Next.js,Typescript y Tailwind css, implementando el sistema de gestión de recetas que previamente desarrollé para que puedas explorar y buscar recetas de todas partes de el mundo.",
+			"Este proyecto está en desarrollo y se está construyendo utilizando Next.js, TypeScript y Tailwind CSS. Se está implementando un sistema de gestión de recetas que previamente desarrollé, permitiéndo explorar y buscar recetas de todas partes del mundo.",
 		url: "https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/hkzpcjfctshcy05flmer",
 		urlGitHub: "/",
 		urlWeb: "/",
