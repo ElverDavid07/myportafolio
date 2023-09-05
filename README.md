@@ -1,7 +1,7 @@
 <h1 style="color:#4f46e5; font-weight: 700;text-align: center;">Bienvenidos a mi Portafolio Web</h1>
 <br/>
 
-![portafolio web](https://res.cloudinary.com/dnbdpnvz1/image/upload/v1693086730/images_project/dppoo0goindsfdwy4b9d.png)
+![portafolio web](/public/og-image.png)
 
 <br/>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">

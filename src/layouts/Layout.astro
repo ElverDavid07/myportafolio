@@ -5,12 +5,12 @@ import "@styles/index.css";
 import "react-toastify/dist/ReactToastify.css";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="scroll-smooth">
   <head>
     <!-- FONT -->
 
-    <!-- Preconnect server -->
+    <!-- Preconnect font server -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -31,18 +31,44 @@ import "react-toastify/dist/ReactToastify.css";
       name="google-site-verification"
       content="FiMsI4mEgqEzXFi0NLz0K05f_7KMV4PszNvAt1z94SA"
     />
+
+    <meta
+      property="og:image"
+      content="https://www.elvportafolio.website/og-image.png"
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.elvportafolio.website/og-image.png"
+    />
+    <meta property="og:title" content="portafolio web | elver david peñate" />
+    <meta
+      property="twitter:title"
+      content="portafolio web | elver david peñate"
+    />
+    <title>portafolio web | elver david peñate</title>
     <meta
       name="description"
       content="portafolio web de elver david peñate , donde muestro mis abilidades,conocimientos,certificados y proyectos que he realizado."
     />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta
+      property="og:description"
+      content="portafolio web de elver david peñate , donde muestro mis abilidades,conocimientos,certificados y proyectos que he realizado."
+    />
+    <meta
+      property="twitter:description"
+      content="portafolio web de elver david peñate , donde muestro mis abilidades,conocimientos,certificados y proyectos que he realizado."
+    />
+    <meta property="og:url" content="https://www.elvportafolio.website" />
+    <meta property="twitter:url" content="https://www.elvportafolio.website" />
     <link rel="canonical" href="https://www.elvportafolio.website" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>portafolio | elver david peñate</title>
   </head>
   <body id="home">
-    <Navbar client:only />
+    <Navbar client:only="react" />
     <slot />
     <Footer />
   </body>
