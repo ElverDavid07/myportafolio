@@ -1,8 +1,6 @@
 import urlImage from "@assets/icon-hero.svg";
-import { Button } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 const Hero = () => {
-	const openCurriculum = () =>
-		window.open("./archives/CurriculumElverDavid.pdf", "_blank");
 	return (
 		<section className="grid lg:grid-cols-2">
 			<div className="mt-20">
@@ -12,7 +10,9 @@ const Hero = () => {
 				</h2>
 				<Button
 					type="submit"
-					onClick={openCurriculum}
+					href="./archives/CurriculumElverDavid.pdf"
+					target="_blank"
+					as={Link}
 					variant="ghost"
 					color="primary"
 					className="font-nunito"

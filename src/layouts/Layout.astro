@@ -63,12 +63,14 @@ import "react-toastify/dist/ReactToastify.css";
     <link rel="canonical" href="https://www.elvportafolio.website" />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
   </head>
   <body id="home">
-    <Navbar client:only="react" />
+    <header class="Content-navbar">
+      <Navbar client:only="react" />
+    </header>
     <slot />
     <Footer />
   </body>
