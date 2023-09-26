@@ -1,104 +1,95 @@
 /** Global */
 
 body {
- @apply bg-[#f6f6f6] dark:bg-slate-900  lg:scrollbar-thumb-rounded-md   lg:scrollbar-track-rounded-sm  lg:scrollbar-thin lg:scrollbar-thumb-indigo-600 lg:scrollbar-track-slate-300 selection:bg-indigo-600 selection:text-white;
+  @apply bg-[#f6f6f6] dark:bg-slate-900  lg:scrollbar-thumb-rounded-md   lg:scrollbar-track-rounded-sm  lg:scrollbar-thin lg:scrollbar-thumb-indigo-600 lg:scrollbar-track-slate-300 selection:bg-indigo-600 selection:text-white;
 }
 
 .Subtitle {
- @apply font-kalam text-4xl text-indigo-600 dark:text-indigo-700;
+  @apply font-kalam text-4xl text-indigo-600 dark:text-indigo-700;
 }
-
 
 /** Navbar Component */
 .Content-navbar {
- @apply top-0 sticky bg-[#f6f6f6] dark:bg-slate-900 z-50;
+  @apply top-0 sticky bg-[#f6f6f6] dark:bg-slate-900 z-50;
 }
 
 .Navbar {
- @apply lg:flex lg:justify-between lg:items-center py-5 lg:px-8 relative;
+  @apply lg:flex lg:justify-between lg:items-center py-5  container mx-auto relative;
 }
 
 .Nav-content-items {
-  @apply lg:static lg:w-auto lg:py-0 absolute bg-[#f6f6f6] dark:bg-slate-900 w-full  z-[-1] lg:z-auto  py-16 pb-96  lg:ml-[550px]
- }
-
-.Nav-icons {
- @apply text-3xl lg:hidden hover:text-indigo-600 dark:text-white;
+  @apply lg:static lg:w-auto lg:py-0 absolute bg-[#f6f6f6] dark:bg-slate-900 w-full  z-[-1] lg:z-auto  py-16 pb-96  lg:ml-[550px];
 }
 
+.Nav-icons {
+  @apply text-3xl lg:hidden hover:text-indigo-600 dark:text-white;
+}
 
 .Nav-list {
- @apply flex lg:flex-row lg:gap-y-0 lg:py-0 lg:text-base flex-col items-center gap-x-3 gap-y-12 py-5   font-nunito  text-xl;
+  @apply flex lg:flex-row lg:gap-y-0 lg:py-0 lg:text-base flex-col items-center gap-x-3 gap-y-12 py-5   font-nunito  text-xl;
 }
 
 .Link:hover {
- text-shadow: 0px 0px 10px #0693E3;
- transition-duration: 300ms;
+  text-shadow: 0px 0px 10px #0693e3;
+  transition-duration: 300ms;
 }
-.Link-Dark:hover{
-  text-shadow: 0px 0px 10px #0693E3;
- color:#fff;
- transition-duration: 300ms;
-  
-}
-
-.Nav-link{
-  @apply text-slate-700 hover:text-primary dark:text-white dark:hover:text-primary transition-all
+.Link-Dark:hover {
+  text-shadow: 0px 0px 10px #0693e3;
+  color: #fff;
+  transition-duration: 300ms;
 }
 
-.Content-menu-icons{
-  @apply ml-44 lg:ml-0 lg:order-2 absolute lg:static top-6 lg:top-0 lg:right-0 right-14
+.Nav-link {
+  @apply text-slate-700 hover:text-primary dark:text-white dark:hover:text-primary transition-all;
+}
+
+.Content-menu-icons {
+  @apply ml-44 lg:ml-0 lg:order-2 absolute lg:static top-6 lg:top-0 lg:right-0 right-14;
 }
 /** Hero component  */
 .Name {
- @apply font-kalam text-5xl  text-indigo-600 dark:text-indigo-700;
+  @apply font-kalam text-5xl  text-indigo-600 dark:text-indigo-700;
 }
-
 
 /** Knowledge component */
 .Content-icons {
- @apply grid lg:grid-cols-3 lg:gap-8  grid-cols-2 items-center justify-items-center gap-y-12;
+  @apply grid lg:grid-cols-3 lg:gap-8  grid-cols-2 items-center justify-items-center gap-y-12;
 }
-
 
 /** Certificate component  */
 
 .Text {
- @apply font-nunito text-slate-700 dark:text-slate-200 flex items-start  gap-x-1;
+  @apply font-nunito text-slate-700 dark:text-slate-200 flex items-start  gap-x-1;
 }
 .Content-certificates {
- @apply pb-5   bg-white dark:bg-transparent dark:border-slate-700  border   rounded-lg lg:w-[380px] md:w-[340px];
+  @apply pb-5   bg-white dark:bg-transparent dark:border-slate-700  border   rounded-lg lg:w-[380px] md:w-[340px];
 }
 .Link-certificate {
- @apply text-primary font-nunito flex justify-end pt-6 text-lg pr-2;
+  @apply text-primary font-nunito flex justify-end pt-6 text-lg pr-2;
 }
-
 
 /** Project component  */
 
 .Content-all-project {
- @apply grid  md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-8 mt-16 justify-items-center ;
+  @apply grid  md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-8 mt-16 justify-items-center;
 }
 
 .Content-one-project {
- @apply rounded-lg shadow-lg shadow-indigo-300 dark:shadow-indigo-600/20  dark:shadow-2xl px-4 py-10 relative hover:scale-[1.03] duration-300 lg:w-[380px] md:w-[340px] ;
+  @apply rounded-lg shadow-lg shadow-indigo-300 dark:shadow-indigo-600/20  dark:shadow-2xl px-4 py-10 relative hover:scale-[1.03] duration-300 lg:w-[380px] md:w-[340px];
 }
-
 
 .Link-response {
- @apply flex items-center gap-x-1 lg:block text-slate-800 dark:text-white dark:hover:text-primary hover:text-primary transition-all;
+  @apply flex items-center gap-x-1 lg:block text-slate-800 dark:text-white dark:hover:text-primary hover:text-primary transition-all;
 }
-
 
 /** Contact component  */
 
 .Form {
- @apply flex flex-col lg:w-1/3 md:w-[50%] 2xl:w-[22%] gap-y-5 mx-auto  mb-16 border dark:border-slate-700  py-10 px-4 rounded-xl relative;
+  @apply flex flex-col lg:w-1/3 md:w-[50%] 2xl:w-[30%] gap-y-5 mx-auto  mb-16 border dark:border-slate-700  py-10 px-4 rounded-xl relative;
 }
-
 
 /** Footer component  */
 
 .Footer {
- @apply lg:flex-row lg:gap-y-0 lg:justify-around bg-slate-200 dark:bg-[#1f2937] dark:text-white flex flex-col justify-center gap-y-5 items-center  mt-32 font-nunito text-slate-700 h-40;
+  @apply lg:flex-row lg:gap-y-0 lg:justify-around bg-slate-200 dark:bg-[#1f2937] dark:text-white flex flex-col justify-center gap-y-5 items-center  mt-32 font-nunito text-slate-700 h-40;
 }
