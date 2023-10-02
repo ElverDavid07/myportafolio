@@ -58,7 +58,7 @@ const Contact = () => {
 						maxLength: 50,
 					})}
 					variant="bordered"
-					validationState={errors.nombre ? "invalid" : "valid"}
+					isInvalid={errors.nombre ? true : false}
 					errorMessage={
 						errors.nombre
 							? errors.nombre.type === "required"
@@ -77,8 +77,8 @@ const Contact = () => {
 				<Input
 					isClearable
 					size="lg"
+					isInvalid={errors.correo ? true : false}
 					variant="bordered"
-					validationState={errors.correo ? "invalid" : "valid"}
 					type="email"
 					placeholder="Ingresa tu correo electronico"
 					{...register("correo", {
@@ -99,9 +99,9 @@ const Contact = () => {
 				{/* Input Message */}
 				<label htmlFor="message">Mensaje</label>
 				<Textarea
+					isInvalid={errors.mensaje ? true : false}
 					variant="bordered"
 					size="lg"
-					validationState={errors.mensaje ? "invalid" : "valid"}
 					placeholder="Escribe tu mensaje aqui"
 					{...register("mensaje", { required: true })}
 					className="resize-none"
