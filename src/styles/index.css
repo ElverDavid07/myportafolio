@@ -62,7 +62,7 @@ body {
   @apply font-nunito text-slate-700 dark:text-slate-200 flex items-start  gap-x-1;
 }
 .Content-certificates {
-  @apply pb-5   bg-white dark:bg-transparent dark:border-slate-700  border   rounded-lg lg:w-[380px] md:w-[340px];
+  @apply pb-5   bg-white dark:bg-transparent dark:border-slate-700  border   rounded-lg w-[400px] lg:w-[320px] xl:w-[380px] md:w-[340px] 2xl:w-[420px];
 }
 .Link-certificate {
   @apply text-primary font-nunito flex justify-end pt-6 text-lg pr-2;
@@ -75,7 +75,7 @@ body {
 }
 
 .Content-one-project {
-  @apply rounded-lg shadow-lg shadow-indigo-300 dark:shadow-indigo-600/20  dark:shadow-2xl px-4 py-10 relative hover:scale-[1.03] duration-300 lg:w-[380px] md:w-[340px];
+  @apply rounded-lg shadow-lg shadow-indigo-300 dark:shadow-indigo-600/20  dark:shadow-2xl px-4 py-10 relative hover:scale-[1.03] duration-300 w-[400px] lg:w-[320px] xl:w-[380px] md:w-[340px] 2xl:w-[420px];
 }
 
 .Link-response {
@@ -85,7 +85,7 @@ body {
 /** Contact component  */
 
 .Form {
-  @apply flex flex-col lg:w-1/3 md:w-[50%] 2xl:w-[30%] gap-y-5 mx-auto  mb-16 border dark:border-slate-700  py-10 px-4 rounded-xl relative;
+  @apply flex flex-col lg:w-[35%] xl:w-[30%] md:w-[50%] w-[70%]  gap-y-5 mx-auto  mb-16 border dark:border-slate-700  py-10 px-4 rounded-xl relative;
 }
 
 /** Footer component  */
