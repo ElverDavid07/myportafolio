@@ -1,11 +1,11 @@
-import { NavbarLink } from "@utils/navbarLink";
-import { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi/index";
-import { Link } from "react-scroll";
-import ThemeButtons from "./ThemeButtons";
+import { NavbarLink } from '@utils/navbarLink'
+import { useState } from 'react'
+import { FiMenu, FiX } from 'react-icons/fi/index'
+import { Link } from 'react-scroll'
+import ThemeButtons from './ThemeButtons'
 const Navbar = () => {
-	const [open, setOpen] = useState(false);
-	const close = () => setOpen(!open);
+	const [open, setOpen] = useState(false)
+	const close = () => setOpen(!open)
 
 	return (
 		<nav className="Navbar">
@@ -29,12 +29,12 @@ const Navbar = () => {
 			</div>
 			<ThemeButtons />
 
-			<div className={`Nav-content-items ${open ? "top-16" : "top-[-850px] "}`}>
+			<div className={`Nav-content-items ${open ? 'top-16' : 'top-[-850px] '}`}>
 				<section
 					className={`Nav-list  ${
 						open
-							? "top-20 opacity-100 "
-							: "top-[-850px] lg:opacity-100 opacity-0"
+							? 'top-20 opacity-100 '
+							: 'top-[-850px] lg:opacity-100 opacity-0'
 					}`}
 				>
 					{NavbarLink.map(({ href, name, to, offset }, i) => (
@@ -52,7 +52,7 @@ const Navbar = () => {
 				</section>
 			</div>
 		</nav>
-	);
-};
+	)
+}
 
-export default Navbar;
+export default Navbar

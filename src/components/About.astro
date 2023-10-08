@@ -1,13 +1,13 @@
 ---
-import urlImage from "@assets/icon-abaut.svg";
-import { Image, getImage } from "astro:assets";
+import urlImage from '@assets/icon-abaut.svg'
+import { Image, getImage } from 'astro:assets'
 const optimizeImage = await getImage({
   src: urlImage,
-  format: "svg",
-  quality: "max",
+  format: 'svg',
+  quality: 'max',
   height: 463,
-  width: 603,
-});
+  width: 603
+})
 ---
 
 <div class="grid lg:grid-cols-2 items-center">

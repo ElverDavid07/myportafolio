@@ -1,6 +1,6 @@
-import { Link, Tooltip } from "@nextui-org/react";
-import { Project } from "@utils/projects";
-import { RiGithubFill, RiGlobalLine } from "react-icons/ri/index";
+import { Link, Tooltip } from '@nextui-org/react'
+import { Project } from '@utils/projects'
+import { RiGithubFill, RiGlobalLine } from 'react-icons/ri/index'
 const ProjectComponents = () => {
 	return (
 		<>
@@ -11,23 +11,23 @@ const ProjectComponents = () => {
 						<img
 							src={url}
 							alt={name}
-							width={"381"}
-							height={"189"}
+							width={'381'}
+							height={'189'}
 							className="mx-auto"
 						/>
 						<h2 className="text-center font-nunito text-slate-950 dark:text-white text-lg py-2">
 							<b>{name}</b>
 						</h2>
 						<p className="text-slate-700 dark:text-gray-400 py-2 font-nunito">
-							{description}{" "}
+							{description}{' '}
 						</p>
 						<div className="flex justify-between lg:justify-normal items-center gap-x-2">
 							{/* icono de github  */}
 							<Tooltip
 								content="Ver codigo"
 								classNames={{
-									base: "hidden lg:block md:block bg-white capitalize font-nunito text-slate-950",
-									arrow: "bg-neutral-400 dark:bg-white",
+									base: 'hidden lg:block md:block bg-white capitalize font-nunito text-slate-950',
+									arrow: 'bg-neutral-400 dark:bg-white',
 								}}
 								showArrow={true}
 							>
@@ -41,7 +41,7 @@ const ProjectComponents = () => {
 									<RiGithubFill
 										size={30}
 										aria-label="link github"
-										className={urlGitHub === "/" ? "hidden" : ""}
+										className={urlGitHub === '/' ? 'hidden' : ''}
 									/>
 								</Link>
 							</Tooltip>
@@ -49,8 +49,8 @@ const ProjectComponents = () => {
 							<Tooltip
 								content="Ir a la web"
 								classNames={{
-									base: "hidden lg:block md:block bg-white capitalize font-nunito text-slate-950",
-									arrow: "bg-neutral-400 dark:bg-white",
+									base: 'hidden lg:block md:block bg-white capitalize font-nunito text-slate-950',
+									arrow: 'bg-neutral-400 dark:bg-white',
 								}}
 								showArrow={true}
 							>
@@ -63,12 +63,12 @@ const ProjectComponents = () => {
 								>
 									<RiGlobalLine
 										size={30}
-										className={` ${urlWeb === "/" ? "hidden" : ""}`}
+										className={` ${urlWeb === '/' ? 'hidden' : ''}`}
 										aria-label="link website"
 									/>
 									<span
 										className={`font-nunito  lg:hidden ${
-											urlWeb === "/" ? "hidden" : ""
+											urlWeb === '/' ? 'hidden' : ''
 										}`}
 									>
 										ir a la pagina
@@ -80,7 +80,7 @@ const ProjectComponents = () => {
 				))}
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default ProjectComponents;
+export default ProjectComponents

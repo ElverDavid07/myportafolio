@@ -1,36 +1,36 @@
-import emailJs from "@emailjs/browser";
-import type { Data } from "@interfaces/SubmitData";
-import { Button, Input, Spinner, Textarea } from "@nextui-org/react";
-import { useState } from "react";
-import type { SubmitHandler } from "react-hook-form";
-import { useForm } from "react-hook-form";
-import { ToastContainer, Zoom, toast } from "react-toastify";
+import emailJs from '@emailjs/browser'
+import type { Data } from '@interfaces/SubmitData'
+import { Button, Input, Spinner, Textarea } from '@nextui-org/react'
+import { useState } from 'react'
+import type { SubmitHandler } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
+import { ToastContainer, Zoom, toast } from 'react-toastify'
 
 const Contact = () => {
-	const [loaderBtn, setLoaderBtn] = useState(true);
+	const [loaderBtn, setLoaderBtn] = useState(true)
 	//* Hook validate form
 	const {
 		register,
 		reset,
 		handleSubmit,
 		formState: { errors, isValid },
-	} = useForm<Data>();
+	} = useForm<Data>()
 	//* Submit email
 	const submitData: SubmitHandler<Data> = async () => {
 		try {
 			await emailJs.sendForm(
-				"service_aqcg77r",
-				"template_9v5xeya",
-				"#formId",
-				"HmJktww9rFB4Doery",
-			);
-			reset();
-			toast.info("correo enviado correctamente");
+				'service_aqcg77r',
+				'template_9v5xeya',
+				'#formId',
+				'HmJktww9rFB4Doery',
+			)
+			reset()
+			toast.info('correo enviado correctamente')
 		} catch (error) {
-			console.log(error);
+			console.error(error)
 		}
-		setLoaderBtn(true);
-	};
+		setLoaderBtn(true)
+	}
 
 	return (
 		<>
@@ -48,11 +48,11 @@ const Contact = () => {
 				{/*Input Name  */}
 				<label htmlFor="nombre">Nombre</label>
 				<Input
-					isClearable
+					isClearable={true}
 					size="lg"
 					type="text"
 					placeholder="Ingresa tu nombre"
-					{...register("nombre", {
+					{...register('nombre', {
 						required: true,
 						minLength: 3,
 						maxLength: 50,
@@ -61,12 +61,12 @@ const Contact = () => {
 					isInvalid={errors.nombre ? true : false}
 					errorMessage={
 						errors.nombre
-							? errors.nombre.type === "required"
-								? "Este campo es requerido!"
-								: errors.nombre.type === "minLength"
-								? "El nombre debe tener al menos 3 caracteres!"
-								: errors.nombre.type === "maxLength"
-								? "El nombre debe tener máximo 50 caracteres!"
+							? errors.nombre.type === 'required'
+								? 'Este campo es requerido!'
+								: errors.nombre.type === 'minLength'
+								? 'El nombre debe tener al menos 3 caracteres!'
+								: errors.nombre.type === 'maxLength'
+								? 'El nombre debe tener máximo 50 caracteres!'
 								: undefined
 							: undefined
 					}
@@ -75,22 +75,22 @@ const Contact = () => {
 				{/* Input Email */}
 				<label htmlFor="correo">Correo</label>
 				<Input
-					isClearable
+					isClearable={true}
 					size="lg"
 					isInvalid={errors.correo ? true : false}
 					variant="bordered"
 					type="email"
 					placeholder="Ingresa tu correo electronico"
-					{...register("correo", {
+					{...register('correo', {
 						required: true,
 						pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
 					})}
 					errorMessage={
 						errors.correo
-							? errors.correo.type === "required"
-								? "Este campo es requerido!"
-								: errors.correo.type === "pattern"
-								? "Escribe un correo valido!"
+							? errors.correo.type === 'required'
+								? 'Este campo es requerido!'
+								: errors.correo.type === 'pattern'
+								? 'Escribe un correo valido!'
 								: undefined
 							: undefined
 					}
@@ -103,12 +103,14 @@ const Contact = () => {
 					variant="bordered"
 					size="lg"
 					placeholder="Escribe tu mensaje aqui"
-					{...register("mensaje", { required: true })}
+					{...register('mensaje', {
+						required: true,
+					})}
 					className="resize-none"
 					errorMessage={
 						errors.mensaje
-							? errors.mensaje.type === "required"
-								? "Este campo es requerido!"
+							? errors.mensaje.type === 'required'
+								? 'Este campo es requerido!'
 								: undefined
 							: undefined
 					}
@@ -120,13 +122,13 @@ const Contact = () => {
 					color="primary"
 					type="submit"
 					onClick={() => {
-						isValid === true ? setLoaderBtn(false) : "";
+						isValid === true ? setLoaderBtn(false) : ''
 					}}
 				>
 					{loaderBtn === false ? (
 						<Spinner aria-label="spinner" color="white" />
 					) : (
-						"Enviar"
+						'Enviar'
 					)}
 				</Button>
 			</form>
@@ -138,7 +140,7 @@ const Contact = () => {
 				transition={Zoom}
 			/>
 		</>
-	);
-};
+	)
+}
 
-export default Contact;
+export default Contact

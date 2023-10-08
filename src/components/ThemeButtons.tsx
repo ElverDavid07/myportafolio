@@ -1,26 +1,26 @@
-import { useEffect, useState } from "react";
-import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs/index";
+import { useEffect, useState } from 'react'
+import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs/index'
 
 const ThemeButtons = () => {
 	const [theme, setTheme] = useState(
-		localStorage.theme === "dark" ||
-			(!("theme" in localStorage) &&
-				window.matchMedia("(prefers-color-scheme: dark)").matches),
-	);
+		localStorage.theme === 'dark' ||
+			(!('theme' in localStorage) &&
+				window.matchMedia('(prefers-color-scheme: dark)').matches),
+	)
 
 	useEffect(() => {
 		if (theme) {
-			document.documentElement.classList.add("dark");
-			localStorage.theme = "dark";
+			document.documentElement.classList.add('dark')
+			localStorage.theme = 'dark'
 		} else {
-			document.documentElement.classList.remove("dark");
-			localStorage.theme = "light";
+			document.documentElement.classList.remove('dark')
+			localStorage.theme = 'light'
 		}
-	}, [theme]);
+	}, [theme])
 
 	const changeDarkMode = () => {
-		setTheme((prevState) => !prevState);
-	};
+		setTheme((prevState) => !prevState)
+	}
 
 	return (
 		<>
@@ -42,7 +42,7 @@ const ThemeButtons = () => {
 				)}
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default ThemeButtons;
+export default ThemeButtons

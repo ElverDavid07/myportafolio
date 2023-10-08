@@ -1,5 +1,5 @@
-export interface Data{
-    nombre:string
-    correo:string
-    mensaje:string
+export interface Data {
+	nombre: string
+	correo: string
+	mensaje: string
 }
