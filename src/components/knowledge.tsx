@@ -1,5 +1,5 @@
-import { Tooltip } from "@nextui-org/react";
-import { knowledge } from "@utils/knowledge";
+import { Tooltip } from '@nextui-org/react'
+import { knowledge } from '@utils/knowledge'
 const knowledgeComponent = () => {
 	return (
 		<>
@@ -11,8 +11,8 @@ const knowledgeComponent = () => {
 							<Tooltip
 								content={name}
 								classNames={{
-									base: "hidden lg:block md:block bg-white capitalize font-nunito text-slate-950",
-									arrow: "bg-neutral-400 dark:bg-white",
+									base: 'hidden lg:block md:block bg-white capitalize font-nunito text-slate-950',
+									arrow: 'bg-neutral-400 dark:bg-white',
 								}}
 								showArrow={true}
 							>
@@ -34,7 +34,7 @@ const knowledgeComponent = () => {
 				</div>
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default knowledgeComponent;
+export default knowledgeComponent

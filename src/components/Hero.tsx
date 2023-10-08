@@ -1,5 +1,5 @@
-import urlImage from "@assets/icon-hero.svg";
-import { Button, Link } from "@nextui-org/react";
+import urlImage from '@assets/icon-hero.svg'
+import { Button, Link } from '@nextui-org/react'
 const Hero = () => {
 	return (
 		<section className="grid lg:grid-cols-2">
@@ -29,7 +29,7 @@ const Hero = () => {
 				height="500"
 			/>
 		</section>
-	);
-};
+	)
+}
 
-export default Hero;
+export default Hero

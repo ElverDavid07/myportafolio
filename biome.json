@@ -6,7 +6,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "all": true
     }
   },
   "formatter": {
@@ -15,5 +15,8 @@
     "indentSize": 2,
     "lineWidth": 80,
     "indentStyle": "tab"
+  },
+  "javascript":{
+    "formatter":{"semicolons":"asNeeded","enabled": true,"quoteStyle":"single"}
   }
 }
