@@ -37,7 +37,7 @@ const Contact = () => {
 			<h2 className="Subtitle text-center mt-32 mb-16" id="contact">
 				Contacto
 			</h2>
-			<p className="font-nunito text-slate-700 dark:text-gray-400 text-lg  mb-16 text-center">
+			<p className="font-nunito text-slate-700 dark:text-gray-300 text-lg  mb-16 text-center">
 				¡Gracias por visitar mi portafolio! Si deseas ponerte en contacto
 				conmigo, puedes enviarme un correo electrónico, atravez de este
 				formulario.

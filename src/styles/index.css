@@ -1,7 +1,7 @@
 /** Global */
 
 body {
-  @apply bg-[#f6f6f6] dark:bg-slate-900  lg:scrollbar-thumb-rounded-md   lg:scrollbar-track-rounded-sm  lg:scrollbar-thin lg:scrollbar-thumb-indigo-600 lg:scrollbar-track-slate-300 selection:bg-indigo-600 selection:text-white;
+  @apply bg-base dark:bg-slate-900  lg:scrollbar-thumb-rounded-md   lg:scrollbar-track-rounded-sm  lg:scrollbar-thin lg:scrollbar-thumb-indigo-600 lg:scrollbar-track-slate-300 selection:bg-indigo-600 selection:text-white;
 }
 
 .Subtitle {
@@ -10,7 +10,7 @@ body {
 
 /** Navbar Component */
 .Content-navbar {
-  @apply top-0 sticky bg-[#f6f6f6] dark:bg-slate-900 z-50;
+  @apply top-0 sticky bg-base dark:bg-slate-900 z-50;
 }
 
 .Navbar {
@@ -18,16 +18,13 @@ body {
 }
 
 .Nav-content-items {
-  @apply lg:static lg:w-auto lg:py-0 absolute bg-[#f6f6f6] dark:bg-slate-900 w-full  z-[-1] lg:z-auto  py-16 pb-96  lg:ml-[550px];
+  @apply lg:flex lg:items-center lg:static lg:z-auto lg:w-auto absolute gap-x-4 left-0 z-10 w-full transition-all shadow-md lg:shadow-none pb-5 lg:pb-0 dark:bg-slate-900 bg-base lg:bg-transparent
 }
 
 .Nav-icons {
-  @apply text-3xl xl:hidden hover:text-indigo-600 dark:text-white;
+  @apply text-3xl lg:hidden hover:text-indigo-600 dark:text-white;
 }
 
-.Nav-list {
-  @apply flex lg:flex-row lg:gap-y-0 lg:py-0 lg:text-base flex-col items-center gap-x-3 gap-y-12 py-5   font-nunito  text-xl;
-}
 
 .Link:hover {
   text-shadow: 0px 0px 10px #0693e3;

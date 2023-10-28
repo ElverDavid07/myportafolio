@@ -18,7 +18,7 @@ const ProjectComponents = () => {
 						<h2 className="text-center font-nunito text-slate-950 dark:text-white text-lg py-2">
 							<b>{name}</b>
 						</h2>
-						<p className="text-slate-700 dark:text-gray-400 py-2 font-nunito">
+						<p className="text-slate-700 dark:text-gray-300 py-2 font-nunito">
 							{description}{' '}
 						</p>
 						<div className="flex justify-between lg:justify-normal items-center gap-x-2">

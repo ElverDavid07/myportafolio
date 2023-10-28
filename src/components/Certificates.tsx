@@ -22,8 +22,8 @@ const CertificatesComponent = () => {
 						/>
 						<div className="px-2 space-y-2 mt-3">
 							<span className="Text">
-								<RiMapPinLine className="text-slate-700 mt-1 dark:text-gray-400 text-lg " />
-								<span className="flex-1 dark:text-gray-400 text-slate-700">
+								<RiMapPinLine className="text-slate-700 mt-1 dark:text-gray-300 text-lg " />
+								<span className="flex-1 dark:text-gray-300 text-slate-700">
 									<b className="dark:text-white text-slate-950">
 										Otorgado por :
 									</b>{' '}
@@ -31,8 +31,8 @@ const CertificatesComponent = () => {
 								</span>
 							</span>
 							<span className="Text">
-								<TbCertificate className="text-slate-700 dark:text-gray-400 text-lg" />
-								<span className="flex-1 dark:text-gray-400 text-slate-700">
+								<TbCertificate className="text-slate-700 dark:text-gray-300 text-lg" />
+								<span className="flex-1 dark:text-gray-300 text-slate-700">
 									<b className="dark:text-white text-slate-950">Nombre : </b>
 									{course}
 								</span>

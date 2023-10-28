@@ -9,11 +9,12 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				nunito: "'Nunito', sans-serif",
-				kalam: "'Kalam', cursive",
+				nunito: "'nunito', sans-serif",
+				kalam: "'kalam', cursive",
 			},
 			colors: {
 				primary: "#0693E3",
+				base:"#f6f6f6"
 			},
 		},
 	},
