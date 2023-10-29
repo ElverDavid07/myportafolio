@@ -9,14 +9,14 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				nunito: "'nunito', sans-serif",
-				kalam: "'kalam', cursive",
+				nunito: "nunito",
+				kalam: "kalam",
 			},
 			colors: {
-				primary: "#0693E3",
+				primary: "#06A0F9",
 				base:"#f6f6f6"
 			},
 		},
 	},
-	plugins: [require("tailwind-scrollbar")({ nocompatible: true }), nextui()],
+	plugins: [require("tailwind-scrollbar")({ nocompatible: true }), nextui(),require('tailwindcss-animated')],
 };

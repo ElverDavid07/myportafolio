@@ -37,7 +37,7 @@ const ThemeButtons = () => {
 				) : (
 					<BsFillMoonStarsFill
 						size={25}
-						className="text-sky-700 cursor-pointer"
+						className="text-blue-700 cursor-pointer"
 					/>
 				)}
 			</div>

@@ -5,7 +5,7 @@ body {
 }
 
 .Subtitle {
-  @apply font-kalam text-4xl text-indigo-600 dark:text-indigo-700;
+  @apply font-kalam text-4xl text-indigo-600 dark:text-primary;
 }
 
 /** Navbar Component */
@@ -45,7 +45,7 @@ body {
 }
 /** Hero component  */
 .Name {
-  @apply font-kalam text-5xl  text-indigo-600 dark:text-indigo-700;
+  @apply font-kalam text-5xl  text-indigo-600 dark:text-primary;
 }
 
 /** Knowledge component */

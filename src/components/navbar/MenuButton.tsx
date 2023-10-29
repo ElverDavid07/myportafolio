@@ -12,7 +12,7 @@ const MenuButton = ({ open, setOpen }: MenuButtonProps) => {
 			onClick={() => setOpen(!open)}
 			aria-label="button menu"
 			type="submit"
-			className="order-1 lg:order-none"
+			className="order-1 lg:order-none animate-jump animate-duration-[2000ms]"
 		>
 			{open ? (
 				<FiX className="Nav-icons" title="close navbar" />
