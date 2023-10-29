@@ -26,7 +26,7 @@ const knowledgeComponent = () => {
 								/>
 							</Tooltip>
 
-							<h3 className="text-center font-nunito text-slate-700 dark:text-gray-400 lg:hidden md:hidden">
+							<h3 className="text-center font-nunito text-slate-700 dark:text-gray-300 lg:hidden md:hidden">
 								{name}
 							</h3>
 						</div>

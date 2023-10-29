@@ -1,29 +1,17 @@
 ---
-import Footer from "@components/Footer.astro";
-import Navbar from "@components/Navbar";
-import "@styles/index.css";
-import "react-toastify/dist/ReactToastify.css";
+import Footer from '@components/Footer.astro'
+import Navbar from '@components/navbar/Navbar'
+import '@styles/index.css'
+import 'react-toastify/dist/ReactToastify.css'
+import Font from './Font.astro'
 ---
 
 <!doctype html>
 <html lang="es" class="scroll-smooth">
   <head>
     <!-- FONT -->
+    <Font />
 
-    <!-- Preconnect font server -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- nunito -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- kalam -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap"
-      rel="stylesheet"
-    />
     <!-- Global Metadata -->
     <meta charset="UTF-8" />
     <!-- meta google verify -->
@@ -68,9 +56,7 @@ import "react-toastify/dist/ReactToastify.css";
     <meta name="generator" content={Astro.generator} />
   </head>
   <body id="home">
-    <header class="Content-navbar">
-      <Navbar client:only="react" />
-    </header>
+    <Navbar client:only="react" />
     <slot />
     <Footer />
   </body>
