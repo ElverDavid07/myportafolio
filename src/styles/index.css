@@ -10,7 +10,7 @@ body {
 
 /** Navbar Component */
 .Content-navbar {
-  @apply top-0 sticky bg-base/95 dark:bg-slate-900/95 z-50 backdrop-blur-xl backdrop-saturate-150;
+  @apply top-0 sticky bg-base/95 lg:dark:bg-slate-900/95 dark:bg-slate-900 z-50 lg:backdrop-blur-xl lg:backdrop-saturate-150;
 }
 
 .Navbar {
@@ -18,7 +18,7 @@ body {
 }
 
 .Nav-content-items {
-  @apply lg:flex lg:items-center lg:static lg:z-auto lg:w-auto absolute gap-x-4 left-0 z-10 w-full transition-all shadow-md lg:shadow-none pb-5 lg:pb-0 dark:bg-slate-900 lg:dark:bg-transparent bg-base lg:bg-transparent
+  @apply lg:flex lg:items-center lg:static lg:z-auto lg:w-auto absolute gap-x-4 left-0 z-10 w-full transition-all shadow-md lg:shadow-none pb-5 lg:pb-0 dark:bg-slate-900 lg:dark:bg-transparent bg-base lg:bg-transparent mt-5 lg:mt-0
 }
 
 .Nav-icons {
