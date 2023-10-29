@@ -10,7 +10,7 @@ const Navbar = () => {
 	const close = () => setOpen(!open)
 
 	return (
-		<header className="Content-navbar animate-fade-down animate-once animate-duration-150">
+		<header className="Content-navbar">
 			<nav className="Navbar">
 				<section className="flex justify-between items-center mx-2 lg:-order-1">
 					<Logo />
