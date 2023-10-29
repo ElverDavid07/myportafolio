@@ -1,15 +1,14 @@
-import type React from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 
 interface MenuButtonProps {
 	open: boolean
-	setOpen: React.Dispatch<React.SetStateAction<boolean>>
+	closeMenu: () => void
 }
 
-const MenuButton = ({ open, setOpen }: MenuButtonProps) => {
+const MenuButton = ({ open, closeMenu }: MenuButtonProps) => {
 	return (
 		<button
-			onClick={() => setOpen(!open)}
+			onClick={closeMenu}
 			aria-label="button menu"
 			type="submit"
 			className="order-1 lg:order-none animate-jump animate-duration-[2000ms]"
