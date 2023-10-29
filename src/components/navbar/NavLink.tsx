@@ -2,10 +2,10 @@ import { NavbarLink } from '@utils/navbarLink'
 import { Link } from 'react-scroll'
 
 interface NavLinksProps {
-	close: () => void
+	closeMenu: () => void
 	open: boolean
 }
-const NavLink = ({ close, open }: NavLinksProps) => {
+const NavLink = ({ closeMenu, open }: NavLinksProps) => {
 	return (
 		<ul
 			className={`Nav-content-items ${
@@ -19,7 +19,7 @@ const NavLink = ({ close, open }: NavLinksProps) => {
 						href={href}
 						offset={offset}
 						className="Link  dark:Link-Dark Nav-link"
-						onClick={close}
+						onClick={closeMenu}
 					>
 						{name}
 					</Link>
