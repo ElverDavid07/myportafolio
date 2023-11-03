@@ -1,16 +1,16 @@
 /** Global */
 
 body {
-  @apply bg-base dark:bg-slate-900  lg:scrollbar-thumb-rounded-md   lg:scrollbar-track-rounded-sm  lg:scrollbar-thin lg:scrollbar-thumb-indigo-600 lg:scrollbar-track-slate-300 selection:bg-indigo-600 selection:text-white;
+  @apply  bg-slate-900  lg:scrollbar-thumb-rounded-md   lg:scrollbar-track-rounded-sm  lg:scrollbar-thin lg:scrollbar-thumb-indigo-600 lg:scrollbar-track-slate-300 selection:bg-indigo-600 selection:text-white;
 }
 
 .Subtitle {
-  @apply font-kalam text-4xl text-indigo-600 dark:text-primary;
+  @apply font-kalam text-4xl  text-primary;
 }
 
 /** Navbar Component */
 .Content-navbar {
-  @apply top-0 sticky bg-base/95 lg:dark:bg-slate-900/95 dark:bg-slate-900 z-50 lg:backdrop-blur-xl lg:backdrop-saturate-150;
+  @apply top-0 sticky  lg:bg-slate-900/95 bg-slate-900 z-50 lg:backdrop-blur-xl lg:backdrop-saturate-150;
 }
 
 .Navbar {
@@ -18,35 +18,22 @@ body {
 }
 
 .Nav-content-items {
-  @apply lg:flex lg:items-center lg:static lg:z-auto lg:w-auto absolute gap-x-4 left-0 z-10 w-full transition-all shadow-md lg:shadow-none pb-5 lg:pb-0 dark:bg-slate-900 lg:dark:bg-transparent bg-base lg:bg-transparent mt-5 lg:mt-0
+  @apply lg:flex lg:items-center lg:static lg:z-auto lg:w-auto absolute gap-x-4 left-0 z-10 w-full transition-all shadow-md lg:shadow-none pb-5 lg:pb-0 bg-slate-900 lg:bg-transparent mt-5 lg:mt-0
 }
 
 .Nav-icons {
-  @apply text-3xl lg:hidden hover:text-indigo-600 dark:text-white;
-}
-
-
-.Link:hover {
-  text-shadow: 0px 0px 10px #0693e3;
-  transition-duration: 300ms;
-}
-.Link-Dark:hover {
-  text-shadow: 0px 0px 10px #0693e3;
-  color: #fff;
-  transition-duration: 300ms;
+  @apply text-3xl lg:hidden hover:text-indigo-600 text-white;
 }
 
 .Nav-link {
-  @apply text-slate-700 hover:text-primary dark:text-white dark:hover:text-primary transition-all;
+  @apply  hover:text-primary text-white transition-all;
 }
 
-.Content-menu-icons {
-  @apply ml-44 lg:ml-0 lg:order-2 absolute lg:static top-6 lg:top-0 lg:right-0 right-14;
+.Link-Dark:hover {
+  text-shadow: 0px 0px 10px #06a0f9;
+  transition-duration: 300ms;
 }
-/** Hero component  */
-.Name {
-  @apply font-kalam text-5xl  text-indigo-600 dark:text-primary;
-}
+
 
 /** Knowledge component */
 .Content-icons {
@@ -56,10 +43,10 @@ body {
 /** Certificate component  */
 
 .Text {
-  @apply font-nunito text-slate-700 dark:text-slate-200 flex items-start  gap-x-1;
+  @apply font-nunito  text-slate-200 flex items-start  gap-x-1;
 }
 .Content-certificates {
-  @apply pb-5   bg-white dark:bg-transparent dark:border-slate-700  border   rounded-lg w-[350px] lg:w-[400px];
+  @apply pb-5  bg-transparent border-slate-700  border   rounded-lg w-[350px] lg:w-[400px];
 }
 .Link-certificate {
   @apply text-primary font-nunito flex justify-end pt-6 text-lg pr-2;
@@ -72,21 +59,21 @@ body {
 }
 
 .Content-one-project {
-  @apply rounded-lg shadow-lg shadow-indigo-300 dark:shadow-indigo-600/20  dark:shadow-2xl px-4 py-10 relative hover:scale-[1.03] duration-300 w-[350px] lg:w-[400px];
+  @apply rounded-lg shadow-indigo-600/20  shadow-2xl px-4 py-10 relative hover:scale-[1.03] duration-300 w-[350px] lg:w-[400px];
 }
 
 .Link-response {
-  @apply flex items-center gap-x-1 lg:block text-slate-800 dark:text-white dark:hover:text-primary hover:text-primary transition-all;
+  @apply flex items-center gap-x-1 lg:block text-white hover:text-primary transition-all;
 }
 
 /** Contact component  */
 
 .Form {
-  @apply flex flex-col w-[350px] lg:w-[400px] gap-y-5 mx-auto  mb-16 border dark:border-slate-700  py-10 px-4 rounded-xl relative;
+  @apply flex flex-col w-[350px] lg:w-[400px] gap-y-5 mx-auto  mb-16 border border-slate-700  py-10 px-4 rounded-xl relative;
 }
 
 /** Footer component  */
 
 .Footer {
-  @apply lg:flex-row lg:gap-y-0 lg:justify-around bg-slate-200 dark:bg-[#1f2937] dark:text-white flex flex-col justify-center gap-y-5 items-center  mt-32 font-nunito text-slate-700 h-40;
+  @apply lg:flex-row lg:gap-y-0 lg:justify-around bg-[#1f2937] text-white flex flex-col justify-center gap-y-5 items-center  mt-32 font-nunito  h-40;
 }

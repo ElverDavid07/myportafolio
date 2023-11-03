@@ -18,7 +18,7 @@ const NavLink = ({ closeMenu, open }: NavLinksProps) => {
 						to={to}
 						href={href}
 						offset={offset}
-						className="Link  dark:Link-Dark Nav-link"
+						className="Link-Dark Nav-link"
 						onClick={closeMenu}
 					>
 						{name}

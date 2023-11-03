@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const useNavigate = () => {
+const useMenu = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const closeMenu = () => setIsOpen(!isOpen)
@@ -8,4 +8,4 @@ const useNavigate = () => {
 	return { isOpen, closeMenu }
 }
 
-export default useNavigate
+export default useMenu

@@ -1,0 +1,54 @@
+---
+import { Link } from '@nextui-org/react'
+import { Certificates as CertificateComponent } from '@utils/certificates'
+import { RiMapPinLine } from 'react-icons/ri'
+import { TbCertificate } from 'react-icons/tb'
+---
+
+<section>
+  <h2 class="Subtitle mt-36 mb-12">Certificados</h2>
+  <div
+    class="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 justify-items-center"
+    id="certificates"
+  >
+    {
+      CertificateComponent.map(({ course, name, university, url, urlPdf }) => (
+        <div class="Content-certificates">
+          <img
+            src={url}
+            alt={name}
+            width={'411'}
+            height={'315'}
+            class="rounded-t-sm w-full"
+          />
+          <div class="px-2 space-y-2 mt-3">
+            <span class="Text">
+              <RiMapPinLine class="mt-1 text-gray-300 text-lg " />
+              <span class="flex-1 text-gray-300">
+                <b class="text-white">Otorgado por :</b> {university}
+              </span>
+            </span>
+            <span class="Text">
+              <TbCertificate class="text-gray-300 text-lg" />
+              <span class="flex-1 text-gray-300">
+                <b class="text-white">Nombre : </b>
+                {course}
+              </span>
+            </span>
+          </div>
+
+          <Link
+            href={urlPdf}
+            target="_blank"
+            aria-label={name}
+            className="Link-certificate"
+            rel="noreferrer"
+            client:idle
+          >
+            ver certificado
+          </Link>
+        </div>
+      ))
+    }
+  </div>
+</section>
