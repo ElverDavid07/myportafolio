@@ -1,11 +1,11 @@
-import useNavigate from 'hooks/useNavigate'
+import useMenu from 'hooks/useMenu'
 import Logo from './Logo'
+
 import MenuButton from './MenuButton'
 import NavLink from './NavLink'
-import ThemeButtons from './ThemeButtons'
 
 const Navbar = () => {
-	const { isOpen, closeMenu } = useNavigate()
+	const { isOpen, closeMenu } = useMenu()
 	return (
 		<header className="Content-navbar">
 			<nav className="Navbar">
@@ -14,7 +14,6 @@ const Navbar = () => {
 					<MenuButton open={isOpen} closeMenu={closeMenu} />
 				</section>
 
-				<ThemeButtons />
 				<NavLink closeMenu={closeMenu} open={isOpen} />
 			</nav>
 		</header>

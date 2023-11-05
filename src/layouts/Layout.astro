@@ -56,7 +56,7 @@ import Font from './Font.astro'
     <meta name="generator" content={Astro.generator} />
   </head>
   <body id="home">
-    <Navbar client:only="react" />
+    <Navbar client:visible />
     <slot />
     <Footer />
   </body>
