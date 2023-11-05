@@ -49,10 +49,10 @@ const Form = ({ handleLoader, isLoader }: Props) => {
 						? errors.nombre.type === 'required'
 							? 'Este campo es requerido!'
 							: errors.nombre.type === 'minLength'
-							? 'El nombre debe tener al menos 3 caracteres!'
-							: errors.nombre.type === 'maxLength'
-							? 'El nombre debe tener máximo 50 caracteres!'
-							: undefined
+								? 'El nombre debe tener al menos 3 caracteres!'
+								: errors.nombre.type === 'maxLength'
+									? 'El nombre debe tener máximo 50 caracteres!'
+									: undefined
 						: undefined
 				}
 			/>
@@ -62,7 +62,6 @@ const Form = ({ handleLoader, isLoader }: Props) => {
 			<Input
 				id="correo"
 				isClearable={true}
-				size="lg"
 				type="email"
 				placeholder="Ingresa tu correo electronico"
 				className="font-nunito"
@@ -76,8 +75,8 @@ const Form = ({ handleLoader, isLoader }: Props) => {
 						? errors.correo.type === 'required'
 							? 'Este campo es requerido!'
 							: errors.correo.type === 'pattern'
-							? 'Escribe un correo valido!'
-							: undefined
+								? 'Escribe un correo valido!'
+								: undefined
 						: undefined
 				}
 			/>
@@ -93,7 +92,7 @@ const Form = ({ handleLoader, isLoader }: Props) => {
 				{...register('mensaje', {
 					required: true,
 				})}
-				errorMessage={'Este campo es requerido'}
+				errorMessage={errors.mensaje && (errors.mensaje.type === "required" && 'Este campo es requerido')}
 			/>
 
 			<Button
