@@ -1,4 +1,4 @@
-import { FiMenu, FiX } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi/index'
 
 interface MenuButtonProps {
 	open: boolean

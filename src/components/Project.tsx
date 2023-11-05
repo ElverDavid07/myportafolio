@@ -1,6 +1,8 @@
-import { Link, Tooltip } from '@nextui-org/react'
+import { Link } from '@nextui-org/react'
+
 import { Project } from '@utils/projects'
 import { RiGithubFill, RiGlobalLine } from 'react-icons/ri/index'
+import Tooltip from './Tooltip'
 const ProjectComponents = () => {
 	return (
 		<>
@@ -18,19 +20,10 @@ const ProjectComponents = () => {
 						<h2 className="text-center font-nunito  text-white text-lg py-2">
 							<b>{name}</b>
 						</h2>
-						<p className=" text-gray-300 py-2 font-nunito">
-							{description}{' '}
-						</p>
+						<p className=" text-gray-300 py-2 font-nunito">{description} </p>
 						<div className="flex justify-between lg:justify-normal items-center gap-x-2">
 							{/* icono de github  */}
-							<Tooltip
-								content="Ver codigo"
-								classNames={{
-									base: 'hidden lg:block md:block bg-white capitalize font-nunito text-slate-950',
-									arrow: 'bg-white',
-								}}
-								showArrow={true}
-							>
+							<Tooltip content="Ver codigo">
 								<Link
 									href={urlGitHub}
 									target="_blank"
@@ -46,14 +39,7 @@ const ProjectComponents = () => {
 								</Link>
 							</Tooltip>
 							{/* icono de ir a la web */}
-							<Tooltip
-								content="Ir a la web"
-								classNames={{
-									base: 'hidden lg:block md:block bg-white capitalize font-nunito text-slate-950',
-									arrow: 'bg-white',
-								}}
-								showArrow={true}
-							>
+							<Tooltip content="Ir a la web">
 								<Link
 									href={urlWeb}
 									target="_blank"

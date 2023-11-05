@@ -1,5 +1,5 @@
-import { Tooltip } from '@nextui-org/react'
 import { knowledge } from '@utils/knowledge'
+import Tooltip from './Tooltip'
 const knowledgeComponent = () => {
 	return (
 		<>
@@ -8,14 +8,7 @@ const knowledgeComponent = () => {
 				<div className="Content-icons">
 					{knowledge.map(({ link, name }, i) => (
 						<div key={i + name}>
-							<Tooltip
-								content={name}
-								classNames={{
-									base: 'hidden lg:block md:block bg-white capitalize font-nunito text-slate-950',
-									arrow: 'bg-neutral-400 dark:bg-white',
-								}}
-								showArrow={true}
-							>
+							<Tooltip content={name}>
 								<img
 									src={link}
 									alt={name}
