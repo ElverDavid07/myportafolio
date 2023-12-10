@@ -1,5 +1,13 @@
 export const Project = [
 	{
+		name: 'GlobalFood',
+		description:
+			'Una plataforma de recetas desarrollada usando Next.js, TypeScript y Tailwind CSS en el frontend, junto con mi propia API. Ofrece búsquedas por nombre, categoría o país, y brinda información completa de cada receta. Esta creación demuestra mi habilidad para construir soluciones web interactivas y funcionales.',
+		url: 'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/jzpugkctni4pktg3519x',
+		urlGitHub: 'https://github.com/ElverDavid07/Project_Recipe_Page',
+		urlWeb: 'https://www.globalfood.site',
+	},
+	{
 		name: 'Landing page',
 		description:
 			'Diseño de Landig page, Con un enfoque en la estética y la experiencia del usuario.El diseño es optimizado y responsive, asegurando una visualización perfecta en diferentes dispositivos. ',
@@ -23,14 +31,7 @@ export const Project = [
 		urlGitHub: 'https://github.com/ElverDavid07/Recipes-api',
 		urlWeb: '/',
 	},
-	{
-		name: 'Pagina de recetas',
-		description:
-			'Este proyecto está en desarrollo y se está construyendo utilizando Next.js, TypeScript y Tailwind CSS. Se está implementando un sistema de gestión de recetas que previamente desarrollé, permitiéndo explorar y buscar recetas de todas partes del mundo.',
-		url: 'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/hkzpcjfctshcy05flmer',
-		urlGitHub: '/',
-		urlWeb: '/',
-	},
+
 	{
 		name: 'Página web informativa',
 		description:
